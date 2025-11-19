@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 允许axendo.cn域名使用HTTP -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">axendo.cn</domain>
+        <domain includeSubdomains="true">ow365.cn</domain>
+    </domain-config>
+</network-security-config>
