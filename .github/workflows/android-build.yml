@@ -39,7 +39,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
       
       # Step 6: Setup Android SDK
       - name: Setup Android SDK
