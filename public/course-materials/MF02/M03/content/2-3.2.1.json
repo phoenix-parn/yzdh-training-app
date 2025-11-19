@@ -1,33 +1,8 @@
 {
   "knowledgeId": "2-3.2.1",
-  "title": "构件下井",
-  "module": "M03-实操流程模块",
-  "sections": [
-    {
-      "type": "list",
-      "items": [
-        {
-          "title": "下井准备",
-          "content": "检查吊车\n检查吊具\n设置警戒区\n安全交底"
-        },
-        {
-          "title": "下井流程",
-          "content": "吊具连接\n缓慢起吊\n平稳下井\n地下接收"
-        },
-        {
-          "title": "安全措施",
-          "content": "专人指挥\n警戒范围\n应急预案\n通讯畅通"
-        }
-      ]
-    }
-  ],
-  "images": [
-    "/course-materials/MF02/M03/images/2-3.2.1_构件下井流程示意图 + 安全警戒图.png"
-  ],
-  "keyPoints": [
-    "下井流程规范",
-    "安全措施到位",
-    "专人指挥协调"
-  ],
+  "title": "关键工序操作指南",
+  "module": "实操流程模块",
+  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
+  "images": [],
   "documents": []
 }

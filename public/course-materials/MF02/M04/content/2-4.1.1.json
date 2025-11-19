@@ -1,37 +1,8 @@
 {
   "knowledgeId": "2-4.1.1",
-  "title": "质量规范",
-  "module": "M04-保障体系模块",
-  "sections": [
-    {
-      "type": "list",
-      "items": [
-        {
-          "title": "构件质量",
-          "content": "外观质量\n尺寸偏差\n强度等级\n预埋件"
-        },
-        {
-          "title": "安装质量",
-          "content": "垂直度\n标高\n轴线\n接缝宽度"
-        },
-        {
-          "title": "灌浆质量",
-          "content": "饱满度\n强度\n密实度\n养护"
-        },
-        {
-          "title": "验收标准",
-          "content": "外观检查\n尺寸检测\n强度检测\n功能检测"
-        }
-      ]
-    }
-  ],
-  "images": [
-    "/course-materials/MF02/M04/images/2-4.1.1_质量规范清单 + 验收参数表.png"
-  ],
-  "keyPoints": [
-    "质量标准明确",
-    "检测方法规范",
-    "验收程序严格"
-  ],
+  "title": "质量控制体系",
+  "module": "保障体系模块",
+  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
+  "images": [],
   "documents": []
 }

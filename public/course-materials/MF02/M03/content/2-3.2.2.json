@@ -1,33 +1,8 @@
 {
   "knowledgeId": "2-3.2.2",
-  "title": "构件转运",
-  "module": "M03-实操流程模块",
-  "sections": [
-    {
-      "type": "list",
-      "items": [
-        {
-          "title": "转运路线",
-          "content": "规划路线\n清理障碍\n标识明确\n照明充足"
-        },
-        {
-          "title": "叉车作业",
-          "content": "检查叉车\n平稳行驶\n注意高度\n防止碰撞"
-        },
-        {
-          "title": "注意事项",
-          "content": "速度控制\n转弯减速\n避让行人\n保持平衡"
-        }
-      ]
-    }
-  ],
-  "images": [
-    "/course-materials/MF02/M03/images/2-3.2.2_构件转运路线图 + 叉车作业图.png"
-  ],
-  "keyPoints": [
-    "路线规划合理",
-    "叉车操作规范",
-    "安全措施完善"
-  ],
+  "title": "关键工序操作指南",
+  "module": "实操流程模块",
+  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
+  "images": [],
   "documents": []
 }

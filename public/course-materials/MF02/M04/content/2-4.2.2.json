@@ -1,33 +1,8 @@
 {
   "knowledgeId": "2-4.2.2",
-  "title": "用电安全",
-  "module": "M04-保障体系模块",
-  "sections": [
-    {
-      "type": "list",
-      "items": [
-        {
-          "title": "线路架设",
-          "content": "规范架设\n绝缘良好\n防护到位\n标识清晰"
-        },
-        {
-          "title": "配电箱布局",
-          "content": "位置合理\n防雨防潮\n接地可靠\n定期检查"
-        },
-        {
-          "title": "安全要求",
-          "content": "持证操作\n定期检查\n漏电保护\n应急措施"
-        }
-      ]
-    }
-  ],
-  "images": [
-    "/course-materials/MF02/M04/images/2-4.2.2_用电线路架设示意图 + 配电箱布局图.png"
-  ],
-  "keyPoints": [
-    "线路架设规范",
-    "配电箱布局合理",
-    "安全措施完善"
-  ],
+  "title": "安全保障措施",
+  "module": "保障体系模块",
+  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
+  "images": [],
   "documents": []
 }
