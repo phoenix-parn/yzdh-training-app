@@ -10,6 +10,7 @@ import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { learningProgressManager } from '../utils/learningProgress';
 import { courseData } from '../data/courseData';
+import { getKnowledgeContent } from '../data/knowledgeContent';
 
 interface KnowledgePointPageProps {
   onNavigate: (page: string) => void;
@@ -77,17 +78,23 @@ export function KnowledgePointPage({
       setLoading(true);
       setError(null);
 
-      const url = `/course-materials/${mfId}/${moduleId}/content/${knowledgeId}.json`;
-      console.log('Loading knowledge point:', { mfId, moduleId, knowledgeId, url });
-
-      const response = await fetch(url);
-
-      if (!response.ok) {
-        throw new Error('加载失败');
+      // Get content from knowledge content database
+      const knowledgeData = getKnowledgeContent(knowledgeId);
+      
+      if (knowledgeData) {
+        // Convert to KnowledgeContent format
+        setContent({
+          knowledgeId,
+          title: knowledgeData.title,
+          module: moduleId,
+          content: knowledgeData.content.split('\n\n').filter(p => p.trim()),
+          images: knowledgeData.images || [],
+          keyPoints: [],
+          documents: []
+        });
+      } else {
+        throw new Error('内容未找到');
       }
-
-      const data = await response.json();
-      setContent(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : '加载失败');
       console.error('Failed to load knowledge point:', err);
