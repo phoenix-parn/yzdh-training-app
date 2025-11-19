@@ -38,29 +38,29 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 px-4">
-      <div className="max-w-md w-full space-y-6 bg-white p-10 rounded-3xl shadow-2xl">
+      <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-2xl shadow-xl">
         {/* Header with Logo */}
         <div className="text-center">
-          {/* Logo */}
-          <div className="mx-auto mb-6 flex justify-center">
+          {/* Logo - 缩小 */}
+          <div className="mx-auto mb-8 flex justify-center">
             <img 
               src={logo} 
               alt="Logo" 
-              className="h-24 w-24 object-contain drop-shadow-lg"
+              className="h-16 w-16 object-contain"
             />
           </div>
           
-          {/* App Name */}
-          <h1 className="text-2xl font-bold text-gray-900 leading-tight mb-2">
+          {/* App Name - 字体加大 */}
+          <h1 className="text-3xl font-bold text-gray-900 leading-tight mb-3">
             永临一体预制拼装叠合
           </h1>
-          <h2 className="text-xl font-bold text-indigo-600 mb-1">
+          <h2 className="text-2xl font-bold text-indigo-600 mb-4">
             地下车站专业培训
           </h2>
-          <div className="flex items-center justify-center gap-2 mt-3">
-            <div className="h-px w-12 bg-gradient-to-r from-transparent to-indigo-300"></div>
-            <p className="text-sm text-gray-500 font-medium">Training System</p>
-            <div className="h-px w-12 bg-gradient-to-l from-transparent to-indigo-300"></div>
+          <div className="flex items-center justify-center gap-2 mb-8">
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-indigo-200"></div>
+            <p className="text-xs text-gray-400 font-medium tracking-wider">TRAINING SYSTEM</p>
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-indigo-200"></div>
           </div>
         </div>
 
@@ -150,35 +150,6 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
             )}
           </button>
         </form>
-
-        {/* Test Accounts Info */}
-        <div className="mt-6 p-5 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-indigo-100">
-          <div className="flex items-center gap-2 mb-3">
-            <svg className="h-4 w-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-            </svg>
-            <p className="text-xs font-semibold text-indigo-900">测试账号</p>
-          </div>
-          <div className="grid grid-cols-2 gap-2 text-xs">
-            <div className="bg-white p-2 rounded-lg shadow-sm">
-              <p className="font-medium text-gray-700">admin</p>
-              <p className="text-gray-500">管理员</p>
-            </div>
-            <div className="bg-white p-2 rounded-lg shadow-sm">
-              <p className="font-medium text-gray-700">user1</p>
-              <p className="text-gray-500">施工员</p>
-            </div>
-            <div className="bg-white p-2 rounded-lg shadow-sm">
-              <p className="font-medium text-gray-700">user2</p>
-              <p className="text-gray-500">技术员</p>
-            </div>
-            <div className="bg-white p-2 rounded-lg shadow-sm">
-              <p className="font-medium text-gray-700">test</p>
-              <p className="text-gray-500">测试用户</p>
-            </div>
-          </div>
-          <p className="text-xs text-gray-500 mt-3 text-center">密码统一为: <span className="font-mono font-semibold text-indigo-600">123456</span></p>
-        </div>
 
         {/* Footer */}
         <div className="text-center pt-4">
