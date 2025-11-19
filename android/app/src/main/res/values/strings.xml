@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">轨道交通培训系统</string>
+    <string name="title_activity_main">轨道交通培训系统</string>
+    <string name="package_name">com.jiaotou.training</string>
+    <string name="custom_url_scheme">com.jiaotou.training</string>
+</resources>

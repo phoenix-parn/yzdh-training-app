@@ -1,0 +1,745 @@
+[
+  {
+    "mfId": "MF01",
+    "mfName": "工法1-地铁超大异形预制构件安装施工工法",
+    "modules": [
+      {
+        "moduleId": "M01",
+        "moduleName": "基础认知模块",
+        "images": [
+          {
+            "filename": "1-1.1.1_现浇vs预制对比表.png",
+            "path": "/course-materials/MF01/M01/images/1-1.1.1_现浇vs预制对比表.png",
+            "size": 911860
+          },
+          {
+            "filename": "1-1.2.1_工法特点要点清单.png",
+            "path": "/course-materials/MF01/M01/images/1-1.2.1_工法特点要点清单.png",
+            "size": 473768
+          },
+          {
+            "filename": "1-1.3.1_核心术语卡片(吊具类).png",
+            "path": "/course-materials/MF01/M01/images/1-1.3.1_核心术语卡片(吊具类).png",
+            "size": 1792160
+          },
+          {
+            "filename": "1-1.3.2_核心术语卡片(吊索具类).png",
+            "path": "/course-materials/MF01/M01/images/1-1.3.2_核心术语卡片(吊索具类).png",
+            "size": 1620228
+          }
+        ],
+        "contents": [
+          {
+            "knowledgeId": "1-1.1.1",
+            "filename": "1-1.1.1.json",
+            "path": "/course-materials/MF01/M01/content/1-1.1.1.json"
+          },
+          {
+            "knowledgeId": "1-1.1.1",
+            "filename": "1-1.1.1.json",
+            "path": "/course-materials/MF01/M01/content/1-1.1.1.json"
+          },
+          {
+            "knowledgeId": "1-1.1.2",
+            "filename": "1-1.1.2.json",
+            "path": "/course-materials/MF01/M01/content/1-1.1.2.json"
+          },
+          {
+            "knowledgeId": "1-1.1.2",
+            "filename": "1-1.1.2.json",
+            "path": "/course-materials/MF01/M01/content/1-1.1.2.json"
+          },
+          {
+            "knowledgeId": "1-1.2.1",
+            "filename": "1-1.2.1.json",
+            "path": "/course-materials/MF01/M01/content/1-1.2.1.json"
+          },
+          {
+            "knowledgeId": "1-1.2.1",
+            "filename": "1-1.2.1.json",
+            "path": "/course-materials/MF01/M01/content/1-1.2.1.json"
+          },
+          {
+            "knowledgeId": "1-1.2.2",
+            "filename": "1-1.2.2.json",
+            "path": "/course-materials/MF01/M01/content/1-1.2.2.json"
+          },
+          {
+            "knowledgeId": "1-1.2.2",
+            "filename": "1-1.2.2.json",
+            "path": "/course-materials/MF01/M01/content/1-1.2.2.json"
+          },
+          {
+            "knowledgeId": "1-1.3.1",
+            "filename": "1-1.3.1.json",
+            "path": "/course-materials/MF01/M01/content/1-1.3.1.json"
+          },
+          {
+            "knowledgeId": "1-1.3.1",
+            "filename": "1-1.3.1.json",
+            "path": "/course-materials/MF01/M01/content/1-1.3.1.json"
+          },
+          {
+            "knowledgeId": "1-1.3.2",
+            "filename": "1-1.3.2.json",
+            "path": "/course-materials/MF01/M01/content/1-1.3.2.json"
+          },
+          {
+            "knowledgeId": "1-1.3.2",
+            "filename": "1-1.3.2.json",
+            "path": "/course-materials/MF01/M01/content/1-1.3.2.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M02",
+        "moduleName": "核心技术模块",
+        "images": [
+          {
+            "filename": "1-2.1.1_工艺流程图(吊运-转体-安装).png",
+            "path": "/course-materials/MF01/M02/images/1-2.1.1_工艺流程图(吊运-转体-安装).png",
+            "size": 125451
+          },
+          {
+            "filename": "1-2.1.2_吊点受力分析图.png",
+            "path": "/course-materials/MF01/M02/images/1-2.1.2_吊点受力分析图.png",
+            "size": 1150969
+          },
+          {
+            "filename": "1-2.2.3_吊运vs就位吊点对比表.png",
+            "path": "/course-materials/MF01/M02/images/1-2.2.3_吊运vs就位吊点对比表.png",
+            "size": 36551
+          },
+          {
+            "filename": "1-2.3.1_旋转吊具3D示意图(标注核心部件).png",
+            "path": "/course-materials/MF01/M02/images/1-2.3.1_旋转吊具3D示意图(标注核心部件).png",
+            "size": 73504
+          },
+          {
+            "filename": "1-2.3.2_转体吊索具部件拆解图.png",
+            "path": "/course-materials/MF01/M02/images/1-2.3.2_转体吊索具部件拆解图.png",
+            "size": 70661
+          },
+          {
+            "filename": "1-2.3.3_鸭嘴扣吊索具部件拆解图.png",
+            "path": "/course-materials/MF01/M02/images/1-2.3.3_鸭嘴扣吊索具部件拆解图.png",
+            "size": 92674
+          }
+        ],
+        "contents": [
+          {
+            "knowledgeId": "1-2.1.1",
+            "filename": "1-2.1.1.json",
+            "path": "/course-materials/MF01/M02/content/1-2.1.1.json"
+          },
+          {
+            "knowledgeId": "1-2.1.1",
+            "filename": "1-2.1.1.json",
+            "path": "/course-materials/MF01/M02/content/1-2.1.1.json"
+          },
+          {
+            "knowledgeId": "1-2.1.2",
+            "filename": "1-2.1.2.json",
+            "path": "/course-materials/MF01/M02/content/1-2.1.2.json"
+          },
+          {
+            "knowledgeId": "1-2.1.2",
+            "filename": "1-2.1.2.json",
+            "path": "/course-materials/MF01/M02/content/1-2.1.2.json"
+          },
+          {
+            "knowledgeId": "1-2.2.1",
+            "filename": "1-2.2.1.json",
+            "path": "/course-materials/MF01/M02/content/1-2.2.1.json"
+          },
+          {
+            "knowledgeId": "1-2.2.1",
+            "filename": "1-2.2.1.json",
+            "path": "/course-materials/MF01/M02/content/1-2.2.1.json"
+          },
+          {
+            "knowledgeId": "1-2.2.2",
+            "filename": "1-2.2.2.json",
+            "path": "/course-materials/MF01/M02/content/1-2.2.2.json"
+          },
+          {
+            "knowledgeId": "1-2.2.2",
+            "filename": "1-2.2.2.json",
+            "path": "/course-materials/MF01/M02/content/1-2.2.2.json"
+          },
+          {
+            "knowledgeId": "1-2.2.3",
+            "filename": "1-2.2.3.json",
+            "path": "/course-materials/MF01/M02/content/1-2.2.3.json"
+          },
+          {
+            "knowledgeId": "1-2.2.3",
+            "filename": "1-2.2.3.json",
+            "path": "/course-materials/MF01/M02/content/1-2.2.3.json"
+          },
+          {
+            "knowledgeId": "1-2.3.1",
+            "filename": "1-2.3.1.json",
+            "path": "/course-materials/MF01/M02/content/1-2.3.1.json"
+          },
+          {
+            "knowledgeId": "1-2.3.1",
+            "filename": "1-2.3.1.json",
+            "path": "/course-materials/MF01/M02/content/1-2.3.1.json"
+          },
+          {
+            "knowledgeId": "1-2.3.2",
+            "filename": "1-2.3.2.json",
+            "path": "/course-materials/MF01/M02/content/1-2.3.2.json"
+          },
+          {
+            "knowledgeId": "1-2.3.2",
+            "filename": "1-2.3.2.json",
+            "path": "/course-materials/MF01/M02/content/1-2.3.2.json"
+          },
+          {
+            "knowledgeId": "1-2.3.3",
+            "filename": "1-2.3.3.json",
+            "path": "/course-materials/MF01/M02/content/1-2.3.3.json"
+          },
+          {
+            "knowledgeId": "1-2.3.3",
+            "filename": "1-2.3.3.json",
+            "path": "/course-materials/MF01/M02/content/1-2.3.3.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M03",
+        "moduleName": "实操流程模块",
+        "images": [
+          {
+            "filename": "1-3.1.1_构件运输流程图+存放区布局图.png",
+            "path": "/course-materials/MF01/M03/images/1-3.1.1_构件运输流程图+存放区布局图.png",
+            "size": 2474857
+          },
+          {
+            "filename": "1-3.1.2_材料设备清单表.png",
+            "path": "/course-materials/MF01/M03/images/1-3.1.2_材料设备清单表.png",
+            "size": 375636
+          },
+          {
+            "filename": "1-3.2.1_吊索具安装步骤分解图.png",
+            "path": "/course-materials/MF01/M03/images/1-3.2.1_吊索具安装步骤分解图.png",
+            "size": 728624
+          },
+          {
+            "filename": "1-3.2.2_构件吊运流程示意图.png",
+            "path": "/course-materials/MF01/M03/images/1-3.2.2_构件吊运流程示意图.png",
+            "size": 2531859
+          },
+          {
+            "filename": "1-3.2.4_安装定位流程图+偏差检测图.png",
+            "path": "/course-materials/MF01/M03/images/1-3.2.4_安装定位流程图+偏差检测图.png",
+            "size": 1681083
+          },
+          {
+            "filename": "1-3.2.5_构件连接节点详图.png",
+            "path": "/course-materials/MF01/M03/images/1-3.2.5_构件连接节点详图.png",
+            "size": 2083099
+          },
+          {
+            "filename": "1-3.3.1_通用操作要求清单(带安全图标).png",
+            "path": "/course-materials/MF01/M03/images/1-3.3.1_通用操作要求清单(带安全图标).png",
+            "size": 443262
+          }
+        ],
+        "contents": [
+          {
+            "knowledgeId": "1-3.1.1",
+            "filename": "1-3.1.1.json",
+            "path": "/course-materials/MF01/M03/content/1-3.1.1.json"
+          },
+          {
+            "knowledgeId": "1-3.1.1",
+            "filename": "1-3.1.1.json",
+            "path": "/course-materials/MF01/M03/content/1-3.1.1.json"
+          },
+          {
+            "knowledgeId": "1-3.1.2",
+            "filename": "1-3.1.2.json",
+            "path": "/course-materials/MF01/M03/content/1-3.1.2.json"
+          },
+          {
+            "knowledgeId": "1-3.1.2",
+            "filename": "1-3.1.2.json",
+            "path": "/course-materials/MF01/M03/content/1-3.1.2.json"
+          },
+          {
+            "knowledgeId": "1-3.2.1",
+            "filename": "1-3.2.1.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.1.json"
+          },
+          {
+            "knowledgeId": "1-3.2.1",
+            "filename": "1-3.2.1.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.1.json"
+          },
+          {
+            "knowledgeId": "1-3.2.2",
+            "filename": "1-3.2.2.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.2.json"
+          },
+          {
+            "knowledgeId": "1-3.2.2",
+            "filename": "1-3.2.2.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.2.json"
+          },
+          {
+            "knowledgeId": "1-3.2.3",
+            "filename": "1-3.2.3.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.3.json"
+          },
+          {
+            "knowledgeId": "1-3.2.3",
+            "filename": "1-3.2.3.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.3.json"
+          },
+          {
+            "knowledgeId": "1-3.2.4",
+            "filename": "1-3.2.4.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.4.json"
+          },
+          {
+            "knowledgeId": "1-3.2.4",
+            "filename": "1-3.2.4.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.4.json"
+          },
+          {
+            "knowledgeId": "1-3.2.5",
+            "filename": "1-3.2.5.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.5.json"
+          },
+          {
+            "knowledgeId": "1-3.2.5",
+            "filename": "1-3.2.5.json",
+            "path": "/course-materials/MF01/M03/content/1-3.2.5.json"
+          },
+          {
+            "knowledgeId": "1-3.3.1",
+            "filename": "1-3.3.1.json",
+            "path": "/course-materials/MF01/M03/content/1-3.3.1.json"
+          },
+          {
+            "knowledgeId": "1-3.3.1",
+            "filename": "1-3.3.1.json",
+            "path": "/course-materials/MF01/M03/content/1-3.3.1.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M04",
+        "moduleName": "保障体系模块",
+        "images": [
+          {
+            "filename": "1-4.1.1_质量规范清单+外观缺陷对比图.png",
+            "path": "/course-materials/MF01/M04/images/1-4.1.1_质量规范清单+外观缺陷对比图.png",
+            "size": 412763
+          },
+          {
+            "filename": "1-4.1.2_质量保证措施流程图+检验参数表.png",
+            "path": "/course-materials/MF01/M04/images/1-4.1.2_质量保证措施流程图+检验参数表.png",
+            "size": 461389
+          },
+          {
+            "filename": "1-4.2.1_安全教育培训流程表.png",
+            "path": "/course-materials/MF01/M04/images/1-4.2.1_安全教育培训流程表.png",
+            "size": 491148
+          },
+          {
+            "filename": "1-4.2.2_吊装作业安全措施清单.png",
+            "path": "/course-materials/MF01/M04/images/1-4.2.2_吊装作业安全措施清单.png",
+            "size": 366370
+          },
+          {
+            "filename": "1-4.3.1_环保措施流程图.png",
+            "path": "/course-materials/MF01/M04/images/1-4.3.1_环保措施流程图.png",
+            "size": 436079
+          }
+        ],
+        "contents": [
+          {
+            "knowledgeId": "1-4.1.1",
+            "filename": "1-4.1.1.json",
+            "path": "/course-materials/MF01/M04/content/1-4.1.1.json"
+          },
+          {
+            "knowledgeId": "1-4.1.1",
+            "filename": "1-4.1.1.json",
+            "path": "/course-materials/MF01/M04/content/1-4.1.1.json"
+          },
+          {
+            "knowledgeId": "1-4.1.2",
+            "filename": "1-4.1.2.json",
+            "path": "/course-materials/MF01/M04/content/1-4.1.2.json"
+          },
+          {
+            "knowledgeId": "1-4.1.2",
+            "filename": "1-4.1.2.json",
+            "path": "/course-materials/MF01/M04/content/1-4.1.2.json"
+          },
+          {
+            "knowledgeId": "1-4.2.1",
+            "filename": "1-4.2.1.json",
+            "path": "/course-materials/MF01/M04/content/1-4.2.1.json"
+          },
+          {
+            "knowledgeId": "1-4.2.1",
+            "filename": "1-4.2.1.json",
+            "path": "/course-materials/MF01/M04/content/1-4.2.1.json"
+          },
+          {
+            "knowledgeId": "1-4.2.2",
+            "filename": "1-4.2.2.json",
+            "path": "/course-materials/MF01/M04/content/1-4.2.2.json"
+          },
+          {
+            "knowledgeId": "1-4.2.2",
+            "filename": "1-4.2.2.json",
+            "path": "/course-materials/MF01/M04/content/1-4.2.2.json"
+          },
+          {
+            "knowledgeId": "1-4.3.1",
+            "filename": "1-4.3.1.json",
+            "path": "/course-materials/MF01/M04/content/1-4.3.1.json"
+          },
+          {
+            "knowledgeId": "1-4.3.1",
+            "filename": "1-4.3.1.json",
+            "path": "/course-materials/MF01/M04/content/1-4.3.1.json"
+          }
+        ],
+        "documents": []
+      }
+    ]
+  },
+  {
+    "mfId": "MF02",
+    "mfName": "工法2-地铁车站预制轨顶风道安装施工工法",
+    "modules": [
+      {
+        "moduleId": "M01",
+        "moduleName": "基础认知模块",
+        "images": [],
+        "contents": [
+          {
+            "knowledgeId": "2-1.1.1",
+            "filename": "2-1.1.1.json",
+            "path": "/course-materials/MF02/M01/content/2-1.1.1.json"
+          },
+          {
+            "knowledgeId": "2-1.1.2",
+            "filename": "2-1.1.2.json",
+            "path": "/course-materials/MF02/M01/content/2-1.1.2.json"
+          },
+          {
+            "knowledgeId": "2-1.2.1",
+            "filename": "2-1.2.1.json",
+            "path": "/course-materials/MF02/M01/content/2-1.2.1.json"
+          },
+          {
+            "knowledgeId": "2-1.2.2",
+            "filename": "2-1.2.2.json",
+            "path": "/course-materials/MF02/M01/content/2-1.2.2.json"
+          },
+          {
+            "knowledgeId": "2-1.3.1",
+            "filename": "2-1.3.1.json",
+            "path": "/course-materials/MF02/M01/content/2-1.3.1.json"
+          },
+          {
+            "knowledgeId": "2-1.3.2",
+            "filename": "2-1.3.2.json",
+            "path": "/course-materials/MF02/M01/content/2-1.3.2.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M02",
+        "moduleName": "核心技术模块",
+        "images": [],
+        "contents": [
+          {
+            "knowledgeId": "2-2.1.1",
+            "filename": "2-2.1.1.json",
+            "path": "/course-materials/MF02/M02/content/2-2.1.1.json"
+          },
+          {
+            "knowledgeId": "2-2.2.1",
+            "filename": "2-2.2.1.json",
+            "path": "/course-materials/MF02/M02/content/2-2.2.1.json"
+          },
+          {
+            "knowledgeId": "2-2.2.2",
+            "filename": "2-2.2.2.json",
+            "path": "/course-materials/MF02/M02/content/2-2.2.2.json"
+          },
+          {
+            "knowledgeId": "2-2.3.1",
+            "filename": "2-2.3.1.json",
+            "path": "/course-materials/MF02/M02/content/2-2.3.1.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M03",
+        "moduleName": "实操流程模块",
+        "images": [],
+        "contents": [
+          {
+            "knowledgeId": "2-3.1.1",
+            "filename": "2-3.1.1.json",
+            "path": "/course-materials/MF02/M03/content/2-3.1.1.json"
+          },
+          {
+            "knowledgeId": "2-3.1.2",
+            "filename": "2-3.1.2.json",
+            "path": "/course-materials/MF02/M03/content/2-3.1.2.json"
+          },
+          {
+            "knowledgeId": "2-3.2.1",
+            "filename": "2-3.2.1.json",
+            "path": "/course-materials/MF02/M03/content/2-3.2.1.json"
+          },
+          {
+            "knowledgeId": "2-3.2.2",
+            "filename": "2-3.2.2.json",
+            "path": "/course-materials/MF02/M03/content/2-3.2.2.json"
+          },
+          {
+            "knowledgeId": "2-3.2.3",
+            "filename": "2-3.2.3.json",
+            "path": "/course-materials/MF02/M03/content/2-3.2.3.json"
+          },
+          {
+            "knowledgeId": "2-3.2.4",
+            "filename": "2-3.2.4.json",
+            "path": "/course-materials/MF02/M03/content/2-3.2.4.json"
+          },
+          {
+            "knowledgeId": "2-3.2.5",
+            "filename": "2-3.2.5.json",
+            "path": "/course-materials/MF02/M03/content/2-3.2.5.json"
+          },
+          {
+            "knowledgeId": "2-3.3.1",
+            "filename": "2-3.3.1.json",
+            "path": "/course-materials/MF02/M03/content/2-3.3.1.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M04",
+        "moduleName": "保障体系模块",
+        "images": [],
+        "contents": [
+          {
+            "knowledgeId": "2-4.1.1",
+            "filename": "2-4.1.1.json",
+            "path": "/course-materials/MF02/M04/content/2-4.1.1.json"
+          },
+          {
+            "knowledgeId": "2-4.1.2",
+            "filename": "2-4.1.2.json",
+            "path": "/course-materials/MF02/M04/content/2-4.1.2.json"
+          },
+          {
+            "knowledgeId": "2-4.2.1",
+            "filename": "2-4.2.1.json",
+            "path": "/course-materials/MF02/M04/content/2-4.2.1.json"
+          },
+          {
+            "knowledgeId": "2-4.2.2",
+            "filename": "2-4.2.2.json",
+            "path": "/course-materials/MF02/M04/content/2-4.2.2.json"
+          },
+          {
+            "knowledgeId": "2-4.3.1",
+            "filename": "2-4.3.1.json",
+            "path": "/course-materials/MF02/M04/content/2-4.3.1.json"
+          }
+        ],
+        "documents": []
+      }
+    ]
+  },
+  {
+    "mfId": "MF03",
+    "mfName": "工法3-地铁车站超长预制方桩整体式安装施工工法",
+    "modules": [
+      {
+        "moduleId": "M01",
+        "moduleName": "基础认知模块",
+        "images": [],
+        "contents": [
+          {
+            "knowledgeId": "3-1.1.1",
+            "filename": "3-1.1.1.json",
+            "path": "/course-materials/MF03/M01/content/3-1.1.1.json"
+          },
+          {
+            "knowledgeId": "3-1.1.2",
+            "filename": "3-1.1.2.json",
+            "path": "/course-materials/MF03/M01/content/3-1.1.2.json"
+          },
+          {
+            "knowledgeId": "3-1.2.1",
+            "filename": "3-1.2.1.json",
+            "path": "/course-materials/MF03/M01/content/3-1.2.1.json"
+          },
+          {
+            "knowledgeId": "3-1.2.2",
+            "filename": "3-1.2.2.json",
+            "path": "/course-materials/MF03/M01/content/3-1.2.2.json"
+          },
+          {
+            "knowledgeId": "3-1.3.1",
+            "filename": "3-1.3.1.json",
+            "path": "/course-materials/MF03/M01/content/3-1.3.1.json"
+          },
+          {
+            "knowledgeId": "3-1.3.2",
+            "filename": "3-1.3.2.json",
+            "path": "/course-materials/MF03/M01/content/3-1.3.2.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M02",
+        "moduleName": "核心技术模块",
+        "images": [],
+        "contents": [
+          {
+            "knowledgeId": "3-2.1.1",
+            "filename": "3-2.1.1.json",
+            "path": "/course-materials/MF03/M02/content/3-2.1.1.json"
+          },
+          {
+            "knowledgeId": "3-2.2.1",
+            "filename": "3-2.2.1.json",
+            "path": "/course-materials/MF03/M02/content/3-2.2.1.json"
+          },
+          {
+            "knowledgeId": "3-2.3.1",
+            "filename": "3-2.3.1.json",
+            "path": "/course-materials/MF03/M02/content/3-2.3.1.json"
+          },
+          {
+            "knowledgeId": "3-2.3.2",
+            "filename": "3-2.3.2.json",
+            "path": "/course-materials/MF03/M02/content/3-2.3.2.json"
+          },
+          {
+            "knowledgeId": "3-2.3.3",
+            "filename": "3-2.3.3.json",
+            "path": "/course-materials/MF03/M02/content/3-2.3.3.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M03",
+        "moduleName": "实操流程模块",
+        "images": [],
+        "contents": [
+          {
+            "knowledgeId": "3-3.1.1",
+            "filename": "3-3.1.1.json",
+            "path": "/course-materials/MF03/M03/content/3-3.1.1.json"
+          },
+          {
+            "knowledgeId": "3-3.1.2",
+            "filename": "3-3.1.2.json",
+            "path": "/course-materials/MF03/M03/content/3-3.1.2.json"
+          },
+          {
+            "knowledgeId": "3-3.2.1",
+            "filename": "3-3.2.1.json",
+            "path": "/course-materials/MF03/M03/content/3-3.2.1.json"
+          },
+          {
+            "knowledgeId": "3-3.2.2",
+            "filename": "3-3.2.2.json",
+            "path": "/course-materials/MF03/M03/content/3-3.2.2.json"
+          },
+          {
+            "knowledgeId": "3-3.2.3",
+            "filename": "3-3.2.3.json",
+            "path": "/course-materials/MF03/M03/content/3-3.2.3.json"
+          },
+          {
+            "knowledgeId": "3-3.2.4",
+            "filename": "3-3.2.4.json",
+            "path": "/course-materials/MF03/M03/content/3-3.2.4.json"
+          },
+          {
+            "knowledgeId": "3-3.2.5",
+            "filename": "3-3.2.5.json",
+            "path": "/course-materials/MF03/M03/content/3-3.2.5.json"
+          },
+          {
+            "knowledgeId": "3-3.2.6",
+            "filename": "3-3.2.6.json",
+            "path": "/course-materials/MF03/M03/content/3-3.2.6.json"
+          },
+          {
+            "knowledgeId": "3-3.2.7",
+            "filename": "3-3.2.7.json",
+            "path": "/course-materials/MF03/M03/content/3-3.2.7.json"
+          },
+          {
+            "knowledgeId": "3-3.3.1",
+            "filename": "3-3.3.1.json",
+            "path": "/course-materials/MF03/M03/content/3-3.3.1.json"
+          }
+        ],
+        "documents": []
+      },
+      {
+        "moduleId": "M04",
+        "moduleName": "保障体系模块",
+        "images": [],
+        "contents": [
+          {
+            "knowledgeId": "3-4.1.1",
+            "filename": "3-4.1.1.json",
+            "path": "/course-materials/MF03/M04/content/3-4.1.1.json"
+          },
+          {
+            "knowledgeId": "3-4.1.2",
+            "filename": "3-4.1.2.json",
+            "path": "/course-materials/MF03/M04/content/3-4.1.2.json"
+          },
+          {
+            "knowledgeId": "3-4.2.1",
+            "filename": "3-4.2.1.json",
+            "path": "/course-materials/MF03/M04/content/3-4.2.1.json"
+          },
+          {
+            "knowledgeId": "3-4.2.2",
+            "filename": "3-4.2.2.json",
+            "path": "/course-materials/MF03/M04/content/3-4.2.2.json"
+          },
+          {
+            "knowledgeId": "3-4.3.1",
+            "filename": "3-4.3.1.json",
+            "path": "/course-materials/MF03/M04/content/3-4.3.1.json"
+          }
+        ],
+        "documents": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+name: Build Android APK
+
+# Trigger the workflow on push or pull request to main branch
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+      
+      # Step 4: Build web application
+      - name: Build web app
+        run: npm run build
+      
+      # Step 5: Setup Java (required for Android build)
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      
+      # Step 6: Setup Android SDK
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      
+      # Step 7: Sync Capacitor
+      - name: Sync Capacitor
+        run: npx cap sync android
+      
+      # Step 8: Grant execute permission for gradlew
+      - name: Grant execute permission for gradlew
+        run: chmod +x android/gradlew
+      
+      # Step 9: Build APK
+      - name: Build APK
+        run: |
+          cd android
+          ./gradlew assembleDebug --stacktrace
+      
+      # Step 10: Upload APK artifact
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 30
+      
+      # Step 11: Create Release (optional, only on tag push)
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: android/app/build/outputs/apk/debug/app-debug.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
