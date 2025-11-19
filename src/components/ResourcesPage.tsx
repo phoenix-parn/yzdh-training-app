@@ -1,10 +1,9 @@
 import { ChevronLeft, Download, Play, FileText, X } from "lucide-react";
-import { Button } from "./ui/button";
+import { useState } from "react";
 import { Card } from "./ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 import { courseData } from "../data/courseData";
-import { useState } from "react";
 
 interface ResourcesPageProps {
   onNavigate: (page: string) => void;
@@ -292,21 +291,23 @@ export function ResourcesPage({ onNavigate }: ResourcesPageProps) {
           </div>
           
           {/* Video Player */}
-          <div className="flex-1 flex items-center justify-center bg-[#0a0a0a]">
+          <div className="flex-1 bg-[#0a0a0a] flex items-center justify-center">
             <video
               className="w-full h-full"
               controls
-              autoPlay
               playsInline
-              preload="auto"
-              src={selectedVideo.视频URL}
-              onError={(e) => {
-                console.error('视频加载失败:', selectedVideo.视频URL);
-                console.error('错误详情:', e);
-              }}
+              preload="metadata"
+              crossOrigin="anonymous"
+              x-webkit-airplay="allow"
+              webkit-playsinline="true"
             >
               <source src={selectedVideo.视频URL} type="video/mp4" />
-              您的浏览器不支持视频播放
+              <p className="text-white text-center p-4">
+                您的设备不支持视频播放<br/>
+                <a href={selectedVideo.视频URL} className="text-blue-400 underline" target="_blank" rel="noopener noreferrer">
+                  点击此处在浏览器中打开
+                </a>
+              </p>
             </video>
           </div>
           
