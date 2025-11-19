@@ -57,6 +57,3 @@ logs
 
 # OS
 Thumbs.db
-
-# Video files (too large for git)
-/public/videos/*.mp4
