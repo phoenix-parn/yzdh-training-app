@@ -10,28 +10,28 @@ export const courseData = {
         {
           "视频ID": "video-01",
           "视频名称": "主体结构与内部装修安装相结合",
-          "视频URL": "http://axendo.cn:6019/file/ea707c90-a971-409f-891e-5445147c53aa.mp4",
+          "视频URL": "/videos/video-01.mp4",
           "时长": "未知",
           "描述": "展示主体结构与内部装修安装相结合的施工工艺"
         },
         {
           "视频ID": "video-02",
           "视频名称": "预制芯叠合柱",
-          "视频URL": "http://axendo.cn:6019/file/e8d79c0c-95a4-49f5-b58d-3c0f62ee9937.mp4",
+          "视频URL": "/videos/video-02.mp4",
           "时长": "未知",
           "描述": "预制芯叠合柱的制作与安装工艺"
         },
         {
           "视频ID": "video-03",
           "视频名称": "预制肋叠合墙",
-          "视频URL": "http://axendo.cn:6019/file/1d8a6fce-6232-49e7-9b3d-df53955069c2.mp4",
+          "视频URL": "/videos/video-03.mp4",
           "时长": "未知",
           "描述": "预制肋叠合墙的施工工艺流程"
         },
         {
           "视频ID": "video-04",
           "视频名称": "预制叠合顶板及中板",
-          "视频URL": "http://axendo.cn:6019/file/6c046c51-91fa-4cf7-8450-814e1486a968.mp4",
+          "视频URL": "/videos/video-04.mp4",
           "时长": "未知",
           "描述": "预制叠合顶板及中板的安装工艺"
         }
