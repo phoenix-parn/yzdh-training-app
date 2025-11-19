@@ -1,8 +1,33 @@
 {
   "knowledgeId": "2-3.1.1",
-  "title": "施工前期准备",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "施工准备",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "施工准备流程",
+          "content": "编制施工方案\n技术交底\n材料设备进场\n场地布置"
+        },
+        {
+          "title": "存放区布局",
+          "content": "分区存放\n标识清晰\n便于吊运\n安全通道"
+        },
+        {
+          "title": "人员组织",
+          "content": "施工队伍\n技术人员\n质检人员\n安全员"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF02/M03/images/2-3.1.1_施工准备流程清单 + 存放区布局图.png"
+  ],
+  "keyPoints": [
+    "施工方案编制完整",
+    "场地布置合理",
+    "人员组织到位"
+  ],
   "documents": []
 }

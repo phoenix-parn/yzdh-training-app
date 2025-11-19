@@ -1,8 +1,33 @@
 {
   "knowledgeId": "2-3.2.5",
-  "title": "关键工序操作指南",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "灌浆施工",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "灌浆准备",
+          "content": "清理灌浆孔\n检查模板\n准备灌浆料\n检查设备"
+        },
+        {
+          "title": "灌浆流程",
+          "content": "搅拌灌浆料\n压力灌浆\n排气排水\n封堵灌浆孔"
+        },
+        {
+          "title": "质量控制",
+          "content": "灌浆饱满\n强度达标\n无空洞\n养护到位"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF02/M03/images/2-3.2.5_灌浆流程示意图 + 升降车作业图.png"
+  ],
+  "keyPoints": [
+    "灌浆料配比准确",
+    "灌浆饱满密实",
+    "养护措施到位"
+  ],
   "documents": []
 }
