@@ -297,8 +297,15 @@ export function ResourcesPage({ onNavigate }: ResourcesPageProps) {
               className="w-full h-full"
               controls
               autoPlay
+              playsInline
+              preload="auto"
               src={selectedVideo.视频URL}
+              onError={(e) => {
+                console.error('视频加载失败:', selectedVideo.视频URL);
+                console.error('错误详情:', e);
+              }}
             >
+              <source src={selectedVideo.视频URL} type="video/mp4" />
               您的浏览器不支持视频播放
             </video>
           </div>
