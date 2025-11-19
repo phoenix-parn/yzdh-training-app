@@ -87,7 +87,7 @@ export function KnowledgePointPage({
           knowledgeId,
           title: knowledgeData.title,
           module: moduleId,
-          content: knowledgeData.content.split('\n\n').filter(p => p.trim()),
+          sections: knowledgeData.sections,
           images: knowledgeData.images || [],
           keyPoints: [],
           documents: []

@@ -73,41 +73,137 @@ const mf01Content: Record<string, { title: string; content: string; images?: str
 const mf03Content: Record<string, { title: string; content: string; images?: string[] }> = {};
 
 /**
+ * Parse markdown content to structured sections
+ */
+function parseMarkdownContent(markdown: string): Array<{ type: 'text' | 'list'; title?: string; content?: string; items?: Array<{ title: string; content: string }> }> {
+  const sections: Array<{ type: 'text' | 'list'; title?: string; content?: string; items?: Array<{ title: string; content: string }> }> = [];
+  const lines = markdown.split('\n');
+  
+  let currentSection: any = null;
+  let currentItem: any = null;
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    
+    // Skip empty lines
+    if (!line) continue;
+    
+    // Skip markdown headers (##, ###)
+    if (line.startsWith('#')) continue;
+    
+    // List item with bold title (### or **)
+    if (line.match(/^\d+\.\s+\*\*(.+?)\*\*/)) {
+      // Save previous section
+      if (currentSection) {
+        sections.push(currentSection);
+      }
+      
+      const match = line.match(/^\d+\.\s+\*\*(.+?)\*\*/);
+      const title = match ? match[1] : '';
+      
+      currentSection = {
+        type: 'list' as const,
+        items: []
+      };
+      
+      currentItem = {
+        title: title,
+        content: ''
+      };
+    }
+    // Bullet point content
+    else if (line.startsWith('-') && currentItem) {
+      const content = line.substring(1).trim();
+      if (currentItem.content) {
+        currentItem.content += '\n' + content;
+      } else {
+        currentItem.content = content;
+      }
+    }
+    // Regular paragraph
+    else if (!line.startsWith('|') && !line.startsWith('```')) {
+      if (currentItem) {
+        // Add to current item
+        if (currentItem.content) {
+          currentItem.content += ' ' + line;
+        } else {
+          currentItem.content = line;
+        }
+      } else {
+        // Start new text section
+        if (currentSection && currentSection.type === 'text') {
+          currentSection.content += ' ' + line;
+        } else {
+          if (currentSection) {
+            sections.push(currentSection);
+          }
+          currentSection = {
+            type: 'text' as const,
+            content: line
+          };
+        }
+      }
+    }
+    
+    // Check if item is complete (next line is empty or new item)
+    if (currentItem && (i === lines.length - 1 || !lines[i + 1].trim() || lines[i + 1].trim().match(/^\d+\.\s+\*\*/))) {
+      if (currentSection && currentSection.items) {
+        currentSection.items.push(currentItem);
+      }
+      currentItem = null;
+    }
+  }
+  
+  // Add last section
+  if (currentSection) {
+    sections.push(currentSection);
+  }
+  
+  return sections;
+}
+
+/**
  * Get knowledge point content by ID
  */
-export function getKnowledgeContent(pointId: string): { title: string; content: string; images?: string[] } | null {
+export function getKnowledgeContent(pointId: string): { title: string; content: string; sections: any[]; images?: string[] } | null {
+  let rawContent = null;
+  
   // Try MF01
   if (mf01Content[pointId]) {
-    return mf01Content[pointId];
+    rawContent = mf01Content[pointId];
   }
-  
   // Try MF02
-  if (mf02Content[pointId]) {
-    return mf02Content[pointId];
+  else if (mf02Content[pointId]) {
+    rawContent = mf02Content[pointId];
+  }
+  // Try MF03
+  else if (mf03Content[pointId]) {
+    rawContent = mf03Content[pointId];
   }
   
-  // Try MF03
-  if (mf03Content[pointId]) {
-    return mf03Content[pointId];
+  // Parse content if found
+  if (rawContent) {
+    return {
+      title: rawContent.title,
+      content: rawContent.content,
+      sections: parseMarkdownContent(rawContent.content),
+      images: rawContent.images
+    };
   }
   
   // Return default content if not found
   return {
     title: "内容开发中",
-    content: `## ${pointId}
-
-该知识点内容正在开发中,敬请期待。
-
-### 学习要点
-- 理解核心概念
-- 掌握关键技术
-- 熟悉操作流程
-
-### 实践应用
-- 结合工程实际
-- 注意安全规范
-- 确保质量标准
-`
+    content: `该知识点内容正在开发中,敬请期待。`,
+    sections: [
+      {
+        type: 'list',
+        items: [
+          { title: '学习要点', content: '理解核心概念\n掌握关键技术\n熟悉操作流程' },
+          { title: '实践应用', content: '结合工程实际\n注意安全规范\n确保质量标准' }
+        ]
+      }
+    ]
   };
 }
 
