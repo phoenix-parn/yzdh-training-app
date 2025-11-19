@@ -65,11 +65,11 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
         </div>
 
         {/* Login Form */}
-        <form className="mt-6 space-y-5 px-[30px]" onSubmit={handleSubmit}>
-          <div className="space-y-5">
+        <form className="mt-6 space-y-5" onSubmit={handleSubmit}>
+          <div className="space-y-4 px-[30px]">
             {/* Username Input */}
             <div className="flex items-center gap-3">
-              <label htmlFor="username" className="text-sm font-semibold text-gray-700 whitespace-nowrap w-16">
+              <label htmlFor="username" className="text-sm font-semibold text-gray-700 whitespace-nowrap w-14 flex-shrink-0">
                 账号
               </label>
               <div className="relative flex-1">
@@ -85,7 +85,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
                   required
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="appearance-none block w-full pl-10 pr-3 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all h-12"
                   placeholder="请输入账号"
                 />
               </div>
@@ -93,7 +93,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
 
             {/* Password Input */}
             <div className="flex items-center gap-3">
-              <label htmlFor="password" className="text-sm font-semibold text-gray-700 whitespace-nowrap w-16">
+              <label htmlFor="password" className="text-sm font-semibold text-gray-700 whitespace-nowrap w-14 flex-shrink-0">
                 密码
               </label>
               <div className="relative flex-1">
@@ -109,7 +109,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="appearance-none block w-full pl-10 pr-3 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 placeholder-gray-400 text-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all h-12"
                   placeholder="请输入密码"
                 />
               </div>
@@ -118,20 +118,23 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
 
           {/* Error Message */}
           {error && (
-            <div className="rounded-xl bg-red-50 border border-red-200 p-3 flex items-center gap-2">
-              <svg className="h-5 w-5 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-              </svg>
-              <span className="text-sm text-red-800 font-medium">{error}</span>
+            <div className="px-[30px]">
+              <div className="rounded-xl bg-red-50 border border-red-200 p-3 flex items-center gap-2">
+                <svg className="h-5 w-5 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm text-red-800 font-medium">{error}</span>
+              </div>
             </div>
           )}
 
           {/* Login Button */}
-          <button
-            type="submit"
-            disabled={loading}
-            className="group relative w-full flex justify-center items-center gap-2 py-3.5 px-4 border border-transparent text-base font-semibold rounded-xl text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-          >
+          <div className="px-[30px]">
+            <button
+              type="submit"
+              disabled={loading}
+              className="group relative w-full flex justify-center items-center gap-2 py-3.5 px-4 border border-transparent text-base font-semibold rounded-xl text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
             {loading ? (
               <>
                 <svg className="animate-spin h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
@@ -148,7 +151,8 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
                 </svg>
               </>
             )}
-          </button>
+            </button>
+          </div>
         </form>
 
         {/* Footer */}

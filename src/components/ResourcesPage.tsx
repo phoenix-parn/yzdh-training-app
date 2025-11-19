@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Card } from "./ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
 import { courseData } from "../data/courseData";
 
 interface ResourcesPageProps {
