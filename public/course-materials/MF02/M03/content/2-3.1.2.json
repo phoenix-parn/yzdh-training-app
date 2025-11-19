@@ -1,8 +1,33 @@
 {
   "knowledgeId": "2-3.1.2",
-  "title": "施工前期准备",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "材料设备清单",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "主要材料",
+          "content": "预制构件\n灌浆料\n密封材料\n连接件"
+        },
+        {
+          "title": "主要设备",
+          "content": "改造叉车\n吊车\n升降车\n运输车"
+        },
+        {
+          "title": "检测工具",
+          "content": "激光定位仪\n水平仪\n全站仪\n测距仪"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF02/M03/images/2-3.1.2_材料设备清单表.png"
+  ],
+  "keyPoints": [
+    "材料准备充足",
+    "设备配置齐全",
+    "检测工具完备"
+  ],
   "documents": []
 }

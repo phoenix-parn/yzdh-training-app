@@ -1,8 +1,37 @@
 {
   "knowledgeId": "2-3.3.1",
-  "title": "通用操作要求",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "操作要求",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "通用要求",
+          "content": "持证上岗\n安全培训\n技术交底\n规范操作"
+        },
+        {
+          "title": "叉车操作",
+          "content": "检查设备\n平稳操作\n注意高度\n防止倾覆"
+        },
+        {
+          "title": "吊装操作",
+          "content": "专人指挥\n匀速起吊\n防止碰撞\n安全警戒"
+        },
+        {
+          "title": "安全注意",
+          "content": "佩戴防护用品\n遵守安全规程\n注意周边环境\n应急处置"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF02/M03/images/2-3.3.1_通用操作要求清单（带安全图标）.png"
+  ],
+  "keyPoints": [
+    "持证上岗",
+    "规范操作",
+    "安全第一"
+  ],
   "documents": []
 }

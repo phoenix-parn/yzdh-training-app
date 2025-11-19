@@ -1,8 +1,33 @@
 {
   "knowledgeId": "2-3.2.3",
-  "title": "关键工序操作指南",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "侧墙安装",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "安装准备",
+          "content": "检查基面\n放线定位\n准备工具\n安全检查"
+        },
+        {
+          "title": "安装步骤",
+          "content": "叉车就位\n构件起升\n精确定位\n临时固定"
+        },
+        {
+          "title": "质量控制",
+          "content": "垂直度检查\n标高控制\n轴线偏差\n接缝处理"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF02/M03/images/2-3.2.3_侧墙安装步骤分解图.png"
+  ],
+  "keyPoints": [
+    "基面处理到位",
+    "定位精确",
+    "质量控制严格"
+  ],
   "documents": []
 }

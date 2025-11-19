@@ -1,8 +1,33 @@
 {
   "knowledgeId": "2-3.2.4",
-  "title": "关键工序操作指南",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "底板安装",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "安装准备",
+          "content": "清理基面\n检查锚栓\n涂抹灌浆料\n准备垫块"
+        },
+        {
+          "title": "安装步骤",
+          "content": "构件就位\n调整标高\n锚栓连接\n临时支撑"
+        },
+        {
+          "title": "连接方式",
+          "content": "锚栓连接\n焊接连接\n灌浆连接\n组合连接"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF02/M03/images/2-3.2.4_底板安装示意图 + 锚栓连接详图.png"
+  ],
+  "keyPoints": [
+    "基面清理彻底",
+    "锚栓连接牢固",
+    "标高控制精确"
+  ],
   "documents": []
 }

@@ -1,8 +1,33 @@
 {
   "knowledgeId": "2-4.2.1",
-  "title": "安全保障措施",
-  "module": "保障体系模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "吊装安全",
+  "module": "M04-保障体系模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "安全教育",
+          "content": "岗前培训\n安全交底\n应急演练\n持证上岗"
+        },
+        {
+          "title": "安全措施",
+          "content": "设置警戒区\n专人指挥\n检查设备\n应急预案"
+        },
+        {
+          "title": "防护用品",
+          "content": "安全帽\n安全带\n防护鞋\n手套"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF02/M04/images/2-4.2.1_吊装作业安全措施清单.png"
+  ],
+  "keyPoints": [
+    "安全教育到位",
+    "防护措施完善",
+    "应急预案齐全"
+  ],
   "documents": []
 }

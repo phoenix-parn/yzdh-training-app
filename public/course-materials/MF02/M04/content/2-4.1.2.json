@@ -1,8 +1,33 @@
 {
   "knowledgeId": "2-4.1.2",
-  "title": "质量控制体系",
-  "module": "保障体系模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "质量保证措施",
+  "module": "M04-保障体系模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "过程控制",
+          "content": "施工方案审批\n技术交底\n过程检查\n隐蔽验收"
+        },
+        {
+          "title": "检测手段",
+          "content": "激光定位\n全站仪测量\n水平仪检查\n强度检测"
+        },
+        {
+          "title": "纠偏措施",
+          "content": "及时发现\n分析原因\n制定方案\n实施纠偏"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF02/M04/images/2-4.1.2_质量保证措施流程图 + 精度检测图.png"
+  ],
+  "keyPoints": [
+    "过程控制严格",
+    "检测手段先进",
+    "纠偏及时有效"
+  ],
   "documents": []
 }
