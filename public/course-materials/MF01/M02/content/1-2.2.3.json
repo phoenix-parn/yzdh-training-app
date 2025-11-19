@@ -1,10 +1,37 @@
 {
   "knowledgeId": "1-2.2.3",
-  "title": "吊点对比",
-  "module": "吊点设置技术",
-  "content": "内容待补充",
-  "images": [
-    "/course-materials/MF01/M02/images/1-2.2.3_吊运vs就位吊点对比表.png"
+  "title": "安装状态吊点设置",
+  "module": "工艺原理",
+  "sections": [
+    {
+      "type": "text",
+      "content": "预制构件转体完毕后置于基坑底部，安装就位采用预埋吊钉作为吊点。"
+    },
+    {
+      "type": "list",
+      "title": "不同构件类型吊点设置",
+      "items": [
+        {
+          "title": "C型预制构件",
+          "content": "在顶板（顶部）位置预埋2组共4个吊钉，作为构件安装就位使用"
+        },
+        {
+          "title": "工型预制构件",
+          "content": "在顶板（顶部）位置预埋2组共4个吊钉，作为构件安装就位使用"
+        },
+        {
+          "title": "L型预制构件",
+          "content": "在侧墙顶部与底板位置预埋2组共4个吊钉，作为构件安装就位使用"
+        }
+      ]
+    }
   ],
-  "documents": []
+  "images": [
+    "/course-materials/MF01/M02/images/page_007_img_02.jpeg"
+  ],
+  "keyPoints": [
+    "采用预埋吊钉",
+    "每个构件4个吊钉（2组）",
+    "转体后置于基坑底部再安装"
+  ]
 }

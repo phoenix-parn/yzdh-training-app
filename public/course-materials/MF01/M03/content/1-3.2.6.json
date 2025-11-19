@@ -1,0 +1,62 @@
+{
+  "knowledgeId": "1-3.2.6",
+  "title": "预制构件安装定位",
+  "module": "施工流程及操作要点",
+  "images": [],
+  "keyPoints": [
+    "以右线为准",
+    "偏差≤5mm",
+    "粗定位+精调整",
+    "测量复核"
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "content": "预制构件安装就位时均采用门式起重机1#小车进行吊装，安装定位以右线为准，以左线作为定位校核。"
+    },
+    {
+      "type": "list",
+      "title": "定位要求",
+      "items": [
+        {
+          "title": "轴线偏差≤5mm",
+          "content": "轴线偏差≤5mm"
+        },
+        {
+          "title": "标高偏差≤5mm",
+          "content": "标高偏差≤5mm"
+        },
+        {
+          "title": "垂直度偏差≤5mm",
+          "content": "垂直度偏差≤5mm"
+        },
+        {
+          "title": "相邻构件错台≤3mm",
+          "content": "相邻构件错台≤3mm"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "定位步骤",
+      "items": [
+        {
+          "title": "第1步",
+          "content": "粗定位（偏差≤20mm）"
+        },
+        {
+          "title": "第2步",
+          "content": "精调整（达到设计要求）"
+        },
+        {
+          "title": "第3步",
+          "content": "测量复核"
+        },
+        {
+          "title": "第4步",
+          "content": "临时固定"
+        }
+      ]
+    }
+  ]
+}

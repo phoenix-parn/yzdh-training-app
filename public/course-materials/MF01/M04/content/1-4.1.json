@@ -1,0 +1,73 @@
+{
+  "knowledgeId": "1-4.1",
+  "title": "施工机具设备",
+  "module": "材料设备与质量控制",
+  "images": [],
+  "keyPoints": [
+    "70t门式起重机",
+    "专用吊具系统",
+    "测量设备",
+    "运输设备"
+  ],
+  "sections": [
+    {
+      "type": "list",
+      "title": "主要施工机具设备配置如下",
+      "items": []
+    },
+    {
+      "type": "list",
+      "title": "起重设备",
+      "items": [
+        {
+          "title": "门式起重机",
+          "content": "70t，配2台小车"
+        },
+        {
+          "title": "旋转吊具",
+          "content": "1套"
+        },
+        {
+          "title": "转体吊索具",
+          "content": "2套"
+        },
+        {
+          "title": "鸭嘴扣吊索具",
+          "content": "2套"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "测量设备",
+      "items": [
+        {
+          "title": "全站仪",
+          "content": "1台"
+        },
+        {
+          "title": "水准仪",
+          "content": "1台"
+        },
+        {
+          "title": "钢卷尺",
+          "content": "若干"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "其他设备",
+      "items": [
+        {
+          "title": "平板运输车",
+          "content": "若干"
+        },
+        {
+          "title": "张拉设备",
+          "content": "1套"
+        }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,54 @@
 {
   "knowledgeId": "1-2.3.3",
-  "title": "鸭嘴扣吊索具",
-  "module": "吊具设计与适配",
-  "content": "内容待补充",
-  "images": [
-    "/course-materials/MF01/M02/images/1-2.3.3_鸭嘴扣吊索具部件拆解图.png"
+  "title": "鸭嘴扣吊索具设计",
+  "module": "工艺原理",
+  "images": [],
+  "keyPoints": [
+    "与吊钉连接",
+    "自锁功能",
+    "快速连接",
+    "用于吊运和安装"
   ],
-  "documents": []
+  "sections": [
+    {
+      "type": "text",
+      "content": "鸭嘴扣吊索具安装于旋转吊具下方，与吊钉进行连接，其组成依次为弓形卸扣、强力环、鸭嘴扣。"
+    },
+    {
+      "type": "list",
+      "title": "鸭嘴扣吊索具主要功能",
+      "items": [
+        {
+          "title": "连接旋转吊具与预埋吊",
+          "content": "连接旋转吊具与预埋吊钉"
+        },
+        {
+          "title": "用于吊运和安装工况",
+          "content": "用于吊运和安装工况"
+        },
+        {
+          "title": "快速连接与拆卸",
+          "content": "快速连接与拆卸"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "鸭嘴扣特点",
+      "items": [
+        {
+          "title": "自锁功能，安全可靠",
+          "content": "自锁功能，安全可靠"
+        },
+        {
+          "title": "操作简便，连接快速",
+          "content": "操作简便，连接快速"
+        },
+        {
+          "title": "承载能力强",
+          "content": "承载能力强"
+        }
+      ]
+    }
+  ]
 }

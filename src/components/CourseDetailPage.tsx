@@ -2,10 +2,11 @@ import { ChevronLeft, Play, CheckCircle2, Circle, ChevronDown, FileText, AlertTr
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Progress } from "./ui/progress";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 import { courseData } from "../data/courseData";
 import { Badge } from "./ui/badge";
+import { learningProgressManager } from "../utils/learningProgress";
 import courseImage1 from "figma:asset/dcd42a7c51a3b4185877df87693d4d1fc892fc93.png";
 import courseImage2 from "figma:asset/fd50b72c943a664dbf83476dd8f247bc4cba358e.png";
 import courseImage3 from "figma:asset/6fe9a063cceb0b3f65e269f2108c5e01d241f7bc.png";
@@ -16,11 +17,40 @@ interface CourseDetailPageProps {
 }
 
 export function CourseDetailPage({ onNavigate, courseId = "MF01" }: CourseDetailPageProps) {
-  const [expandedModules, setExpandedModules] = useState<string[]>(["MF01-M01"]);
-
   const course = courseData.工法分类列表.find(c => c.工法ID === courseId) || courseData.工法分类列表[0];
   
-  const progress = courseId === "MF01" ? 45 : courseId === "MF02" ? 20 : 0;
+  // 默认展开所有模块
+  const allModuleIds = course.模块列表.map(m => m.模块ID);
+  const [expandedModules, setExpandedModules] = useState<string[]>(allModuleIds);
+  const [progress, setProgress] = useState(0);
+  const [studyCount, setStudyCount] = useState(0);
+  const [totalDuration, setTotalDuration] = useState(0);
+  
+  // Calculate total points
+  const totalPoints = course.模块列表.reduce((total, module) => {
+    return total + module.小节列表.reduce((sum, section) => {
+      return sum + section.知识点ID列表.length;
+    }, 0);
+  }, 0);
+
+  // Load progress data
+  useEffect(() => {
+    const progressData = learningProgressManager.getCourseProgress(courseId, totalPoints);
+    setProgress(progressData.progress);
+    setStudyCount(progressData.studyCount);
+    setTotalDuration(progressData.totalDuration);
+  }, [courseId, totalPoints]);
+
+  // Check if a knowledge point is completed
+  const isKnowledgePointCompleted = (pointId: string): boolean => {
+    const progressData = learningProgressManager.getCourseProgress(courseId, totalPoints);
+    return progressData.completedPoints.includes(pointId);
+  };
+
+  // Check if all knowledge points in a lesson are completed
+  const isLessonCompleted = (knowledgePointIds: string[]): boolean => {
+    return knowledgePointIds.every(id => isKnowledgePointCompleted(id));
+  };
 
   // 根据课程ID选择对应的图片
   const courseImages: Record<string, string> = {
@@ -71,22 +101,14 @@ export function CourseDetailPage({ onNavigate, courseId = "MF01" }: CourseDetail
         <h1 className="text-[#333333] line-clamp-1 flex-1">{course.工法名称}</h1>
       </div>
 
-      {/* 视频播放器区域 */}
+      {/* 课程预览图 */}
       <div className="bg-black">
-        <div className="relative aspect-video w-full">
+        <div className="aspect-video w-full">
           <img
             src={currentCourseImage}
-            alt="Video"
+            alt="Course Preview"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-            <Button
-              size="icon"
-              className="h-16 w-16 rounded-full bg-primary hover:bg-primary/90"
-            >
-              <Play className="h-8 w-8 text-white" fill="white" />
-            </Button>
-          </div>
         </div>
       </div>
 
@@ -97,9 +119,13 @@ export function CourseDetailPage({ onNavigate, courseId = "MF01" }: CourseDetail
           <span className="text-primary">{progress}%</span>
         </div>
         <Progress value={progress} className="h-2" />
-        <p className="text-[12px] text-[#666666] mt-2">
-          共{course.模块列表.length}个模块 · {course.模块列表.reduce((sum, m) => sum + m.小节列表.length, 0)}个小节
-        </p>
+        <div className="flex items-center justify-between mt-2 text-[12px] text-[#666666]">
+          <span>共{totalPoints}个知识点</span>
+          <span>·</span>
+          <span>学习{studyCount}次</span>
+          <span>·</span>
+          <span>{learningProgressManager.formatDuration(totalDuration)}</span>
+        </div>
       </div>
 
       {/* 模块列表 */}
@@ -149,8 +175,8 @@ export function CourseDetailPage({ onNavigate, courseId = "MF01" }: CourseDetail
                         }
                       }}
                     >
-                      {/* 根据进度显示完成状态 - 简化逻辑：前几个小节显示为已完成 */}
-                      {moduleIndex === 0 && index < 2 ? (
+                      {/* 根据实际完成情况显示状态图标 */}
+                      {isLessonCompleted(lesson.知识点ID列表) ? (
                         <CheckCircle2 className="h-5 w-5 text-[#00C853] flex-shrink-0 mt-0.5" />
                       ) : (
                         <Circle className="h-5 w-5 text-[#CCCCCC] flex-shrink-0 mt-0.5" />
@@ -180,13 +206,6 @@ export function CourseDetailPage({ onNavigate, courseId = "MF01" }: CourseDetail
             </Collapsible>
           </Card>
         ))}
-      </div>
-
-      {/* 底部固定按钮 */}
-      <div className="fixed bottom-16 left-0 right-0 bg-white border-t border-border p-4">
-        <Button className="w-full bg-primary hover:bg-primary/90 h-12">
-          开始学习
-        </Button>
       </div>
     </div>
   );

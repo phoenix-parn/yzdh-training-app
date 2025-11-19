@@ -2,8 +2,9 @@ import { ChevronLeft, Clock } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { courseData } from "../data/courseData";
+import { learningProgressManager } from "../utils/learningProgress";
 import courseImage1 from "figma:asset/dcd42a7c51a3b4185877df87693d4d1fc892fc93.png";
 import courseImage2 from "figma:asset/fd50b72c943a664dbf83476dd8f247bc4cba358e.png";
 import courseImage3 from "figma:asset/6fe9a063cceb0b3f65e269f2108c5e01d241f7bc.png";
@@ -14,6 +15,7 @@ interface CoursesPageProps {
 
 export function CoursesPage({ onNavigate }: CoursesPageProps) {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [courseProgress, setCourseProgress] = useState<{[key: string]: number}>({});
 
   const filters = [
     { id: "all", label: "全部" },
@@ -22,11 +24,27 @@ export function CoursesPage({ onNavigate }: CoursesPageProps) {
     { id: "completed", label: "已完成" },
   ];
 
-  const courseImages = [courseImage1, courseImage2, courseImage3];
+  // 注意: courseImage2和courseImage3已对调 - MF02用image3, MF03用image2
+  const courseImages = [courseImage1, courseImage3, courseImage2];
+
+  // Load progress for all courses
+  useEffect(() => {
+    const progressMap: {[key: string]: number} = {};
+    courseData.工法分类列表.forEach(course => {
+      const totalPoints = course.模块列表.reduce((total, module) => {
+        return total + module.小节列表.reduce((sum, section) => {
+          return sum + section.知识点ID列表.length;
+        }, 0);
+      }, 0);
+      const progress = learningProgressManager.getCourseProgress(course.工法ID, totalPoints);
+      progressMap[course.工法ID] = progress.progress;
+    });
+    setCourseProgress(progressMap);
+  }, []);
 
   const courses = courseData.工法分类列表.map((course, index) => {
     const totalLessons = course.模块列表.reduce((sum, m) => sum + m.小节列表.length, 0);
-    const progress = [45, 20, 0][index] || 0;
+    const progress = courseProgress[course.工法ID] || 0;
     
     return {
       id: course.工法ID,
@@ -34,9 +52,9 @@ export function CoursesPage({ onNavigate }: CoursesPageProps) {
       description: `${course.模块列表.length}个模块，${totalLessons}个小节`,
       image: courseImages[index],
       duration: `${Math.ceil(totalLessons * 15 / 60)}小时`,
-      status: progress > 0 ? "ongoing" : "not-started",
-      statusText: progress > 0 ? `已完成${progress}%` : "待开始",
-      statusColor: progress > 0 ? "bg-primary" : "bg-[#666666]",
+      status: progress === 100 ? "completed" : progress > 0 ? "ongoing" : "not-started",
+      statusText: progress === 100 ? "已完成" : progress > 0 ? `已完成${progress}%` : "待开始",
+      statusColor: progress === 100 ? "bg-green-600" : progress > 0 ? "bg-primary" : "bg-[#666666]",
     };
   });
 

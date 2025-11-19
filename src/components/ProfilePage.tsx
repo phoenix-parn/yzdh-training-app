@@ -1,9 +1,6 @@
 import {
   ChevronLeft,
   ChevronRight,
-  BookOpen,
-  Heart,
-  Download,
   Settings,
   Clock,
   Users,
@@ -15,6 +12,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { courseData } from "../data/courseData";
 import { getCurrentUser, logout } from "../utils/auth";
 import { getUserStatistics, getGlobalStatistics, formatDuration } from "../utils/statistics";
+import logo from "../assets/logo.png";
 
 interface ProfilePageProps {
   onNavigate: (page: string) => void;
@@ -31,30 +29,6 @@ export function ProfilePage({ onNavigate }: ProfilePageProps) {
   };
 
   const menuItems = [
-    {
-      id: 1,
-      icon: BookOpen,
-      title: "我的学习",
-      subtitle: "已学习5门课程 · 累计12小时30分",
-      color: "text-primary",
-      bgColor: "bg-[#E6F0FF]",
-    },
-    {
-      id: 2,
-      icon: Heart,
-      title: "我的收藏",
-      subtitle: "8个收藏内容",
-      color: "text-[#FF6B6B]",
-      bgColor: "bg-[#FFE6E6]",
-    },
-    {
-      id: 3,
-      icon: Download,
-      title: "下载管理",
-      subtitle: "3个已下载文件",
-      color: "text-[#00C853]",
-      bgColor: "bg-[#E6F9F0]",
-    },
     {
       id: 4,
       icon: Settings,
@@ -93,12 +67,9 @@ export function ProfilePage({ onNavigate }: ProfilePageProps) {
       {/* 用户信息栏 */}
       <div className="bg-white p-4 border-b border-border">
         <div className="flex items-center gap-4">
-          <Avatar className="h-16 w-16">
-            <AvatarImage src="" />
-            <AvatarFallback className="bg-primary text-primary-foreground text-[24px]">
-              张
-            </AvatarFallback>
-          </Avatar>
+          <div className="h-16 w-16 flex-shrink-0 rounded-full overflow-hidden bg-white border-2 border-primary/20 flex items-center justify-center">
+            <img src={logo} alt="Logo" className="h-12 w-12 object-contain" />
+          </div>
           <div className="flex-1">
             <h2 className="text-[#333333] mb-1">{currentUser?.name || '用户'}</h2>
             <p className="text-[14px] text-[#666666]">{currentUser?.role || '学员'}</p>

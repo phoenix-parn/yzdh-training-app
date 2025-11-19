@@ -18,6 +18,7 @@ export interface GlobalStatistics {
   totalDuration: number;       // Total duration across all users in seconds
   averageDuration: number;     // Average duration per user
   lastUpdated: string;         // ISO date string
+  version?: number;            // Data version for migration
 }
 
 const USER_STATS_KEY = 'app_user_statistics';
@@ -25,11 +26,13 @@ const GLOBAL_STATS_KEY = 'app_global_statistics';
 const SESSION_INTERVAL = 60000; // Update every 60 seconds
 
 // Default global statistics (mock initial values)
+const CURRENT_VERSION = 2;  // Increment this to force update
 const DEFAULT_GLOBAL_STATS: GlobalStatistics = {
-  totalUsers: 156,
-  totalDuration: 45820,  // ~12.7 hours in seconds
-  averageDuration: 294,  // ~4.9 minutes per user
-  lastUpdated: new Date().toISOString()
+  totalUsers: 583,
+  totalDuration: 52470000,  // 14575 hours in seconds (14575 * 3600)
+  averageDuration: 90000,  // ~25 hours per user
+  lastUpdated: new Date().toISOString(),
+  version: CURRENT_VERSION
 };
 
 /**
@@ -176,8 +179,25 @@ export function getGlobalStatistics(): GlobalStatistics {
   }
   
   try {
-    return JSON.parse(statsStr);
+    const stats = JSON.parse(statsStr);
+    
+    // Check version and migrate if needed
+    if (!stats.version || stats.version < CURRENT_VERSION) {
+      // Keep accumulated duration but update base values
+      const accumulatedDuration = stats.totalDuration || 0;
+      const newStats = {
+        ...DEFAULT_GLOBAL_STATS,
+        // If old duration is greater than new base, keep it
+        totalDuration: Math.max(accumulatedDuration, DEFAULT_GLOBAL_STATS.totalDuration),
+        version: CURRENT_VERSION
+      };
+      localStorage.setItem(GLOBAL_STATS_KEY, JSON.stringify(newStats));
+      return newStats;
+    }
+    
+    return stats;
   } catch {
+    localStorage.setItem(GLOBAL_STATS_KEY, JSON.stringify(DEFAULT_GLOBAL_STATS));
     return DEFAULT_GLOBAL_STATS;
   }
 }

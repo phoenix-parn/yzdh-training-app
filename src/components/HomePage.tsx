@@ -5,24 +5,44 @@ import { Progress } from "./ui/progress";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { courseData } from "../data/courseData";
+import { learningProgressManager } from "../utils/learningProgress";
+import { useState, useEffect } from "react";
 import courseImage1 from "figma:asset/dcd42a7c51a3b4185877df87693d4d1fc892fc93.png";
 import courseImage2 from "figma:asset/fd50b72c943a664dbf83476dd8f247bc4cba358e.png";
 import courseImage3 from "figma:asset/6fe9a063cceb0b3f65e269f2108c5e01d241f7bc.png";
+import logo from "../assets/logo.png";
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
 }
 
 export function HomePage({ onNavigate }: HomePageProps) {
-  const courseImages = [courseImage1, courseImage2, courseImage3];
+  // 注意: courseImage2和courseImage3已对调 - MF02用image3, MF03用image2
+  const courseImages = [courseImage1, courseImage3, courseImage2];
+  const [courseProgress, setCourseProgress] = useState<{[key: string]: number}>({});
 
   const bannerImages = [courseImage1, courseImage2];
+
+  // Load progress for all courses
+  useEffect(() => {
+    const progressMap: {[key: string]: number} = {};
+    courseData.工法分类列表.forEach(course => {
+      const totalPoints = course.模块列表.reduce((total, module) => {
+        return total + module.小节列表.reduce((sum, section) => {
+          return sum + section.知识点ID列表.length;
+        }, 0);
+      }, 0);
+      const progress = learningProgressManager.getCourseProgress(course.工法ID, totalPoints);
+      progressMap[course.工法ID] = progress.progress;
+    });
+    setCourseProgress(progressMap);
+  }, []);
 
   const ongoingCourses = courseData.工法分类列表.slice(0, 2).map((course, index) => ({
     id: course.工法ID,
     title: course.工法名称,
     image: courseImages[index],
-    progress: index === 0 ? 45 : 20,
+    progress: courseProgress[course.工法ID] || 0,
   }));
 
   const categories = [
@@ -36,7 +56,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
     <div className="flex flex-col min-h-screen bg-[#F5F5F5]">
       {/* 顶部导航栏 */}
       <div className="bg-white px-4 py-3 flex items-center justify-between border-b border-border">
-        <h1 className="text-[#333333]">学习中心</h1>
+        <div className="flex items-center gap-2 flex-1 min-w-0">
+          <img src={logo} alt="Logo" className="h-8 w-8 flex-shrink-0" />
+          <h1 className="text-[#333333] text-[14px] font-medium line-clamp-1">永临一体预制拼装叠合地下车站专业培训</h1>
+        </div>
         <div className="flex items-center gap-3">
           <Button variant="ghost" size="icon" className="h-9 w-9">
             <Bell className="h-5 w-5 text-[#666666]" />

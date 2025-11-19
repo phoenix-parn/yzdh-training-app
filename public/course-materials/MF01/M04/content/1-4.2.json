@@ -1,0 +1,81 @@
+{
+  "knowledgeId": "1-4.2",
+  "title": "质量控制标准",
+  "module": "材料设备与质量控制",
+  "images": [],
+  "keyPoints": [
+    "偏差≤5mm",
+    "错台≤3-5mm",
+    "外观质量合格",
+    "连接牢固密实"
+  ],
+  "sections": [
+    {
+      "type": "list",
+      "title": "预制构件安装质量控制标准",
+      "items": []
+    },
+    {
+      "type": "list",
+      "title": "几何尺寸控制",
+      "items": [
+        {
+          "title": "轴线位置偏差",
+          "content": "≤5mm"
+        },
+        {
+          "title": "标高偏差",
+          "content": "≤5mm"
+        },
+        {
+          "title": "垂直度偏差",
+          "content": "≤5mm"
+        },
+        {
+          "title": "相邻构件错台",
+          "content": "顶底板外露≤3mm，不外露≤5mm"
+        },
+        {
+          "title": "相邻构件错台",
+          "content": "侧墙中隔墙外露≤5mm，不外露≤5mm"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "构件质量要求",
+      "items": [
+        {
+          "title": "外观质量",
+          "content": "无蜂窝、麻面、露筋"
+        },
+        {
+          "title": "混凝土强度",
+          "content": "符合设计要求"
+        },
+        {
+          "title": "预埋件位置",
+          "content": "偏差≤5mm"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "连接质量要求",
+      "items": [
+        {
+          "title": "预应力张拉",
+          "content": "符合设计要求"
+        },
+        {
+          "title": "接缝混凝土",
+          "content": "密实无空洞"
+        },
+        {
+          "title": "防水处理",
+          "content": "符合规范要求"
+        }
+      ]
+    }
+  ]
+}
