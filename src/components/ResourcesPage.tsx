@@ -146,15 +146,9 @@ export function ResourcesPage({ onNavigate }: ResourcesPageProps) {
       </div>
 
       {/* 标签页内容 */}
-      <Tabs defaultValue="brochures" className="flex-1">
+      <Tabs defaultValue="blueprints" className="flex-1">
         <div className="bg-white border-b border-border">
           <TabsList className="w-full justify-start rounded-none h-12 bg-transparent p-0">
-            <TabsTrigger
-              value="brochures"
-              className="flex-1 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:text-primary"
-            >
-              宣传册
-            </TabsTrigger>
             <TabsTrigger
               value="blueprints"
               className="flex-1 rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:text-primary"
@@ -169,43 +163,6 @@ export function ResourcesPage({ onNavigate }: ResourcesPageProps) {
             </TabsTrigger>
           </TabsList>
         </div>
-
-        {/* 宣传册页 */}
-        <TabsContent value="brochures" className="m-0 p-4 pb-20 space-y-3">
-          {brochures.map((brochure) => (
-            <Card key={brochure.id} className="overflow-hidden">
-              <div className="flex gap-3 p-3">
-                <div className="flex-shrink-0 w-24 aspect-[3/4] rounded overflow-hidden">
-                  <img
-                    src={brochure.cover}
-                    alt={brochure.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex-1 flex flex-col justify-between min-w-0">
-                  <div>
-                    <h3 className="mb-1">{brochure.title}</h3>
-                    <p className="text-[14px] text-[#666666] line-clamp-2">
-                      {brochure.description}
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between mt-2">
-                    <span className="text-[12px] text-[#666666]">
-                      {brochure.size}
-                    </span>
-                    <Button
-                      size="sm"
-                      className="h-8 px-3 bg-primary hover:bg-primary/90"
-                    >
-                      <Download className="h-4 w-4 mr-1" />
-                      下载
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </TabsContent>
 
         {/* 设计图纸页 */}
         <TabsContent value="blueprints" className="m-0 p-4 pb-20 space-y-2">
