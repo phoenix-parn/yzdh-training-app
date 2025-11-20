@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-4.3.1",
-  "title": "环保与节能措施",
-  "module": "保障体系模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "环保措施",
+  "module": "M04-保障体系模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "扬尘控制",
+          "content": "洒水降尘\n覆盖防尘\n车辆冲洗\n道路硬化"
+        },
+        {
+          "title": "噪音控制",
+          "content": "低噪设备\n隔音措施\n作业时间控制\n噪音监测"
+        },
+        {
+          "title": "废料处理",
+          "content": "分类收集\n及时清运\n资源回收\n无害化处理"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M04/images/3-4.3.1_环保措施图.png"
+  ],
+  "keyPoints": [
+    "扬尘控制有效",
+    "噪音控制达标",
+    "废料处理规范"
+  ],
   "documents": []
 }

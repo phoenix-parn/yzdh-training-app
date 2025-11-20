@@ -1,8 +1,38 @@
 {
   "knowledgeId": "3-1.2.1",
-  "title": "工法特点与适用范围",
-  "module": "基础认知模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "工法特点",
+  "module": "M01-基础认知模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "施工效率高",
+          "content": "整体吊装\n减少工序\n缩短工期"
+        },
+        {
+          "title": "质量可控",
+          "content": "工厂预制\n标准化生产\n质量稳定"
+        },
+        {
+          "title": "安全可靠",
+          "content": "专用设备\n安全措施完善\n风险可控"
+        },
+        {
+          "title": "环保节能",
+          "content": "减少扬尘\n降低噪音\n节约材料"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M01/images/3-1.2.1_工法特点图.png"
+  ],
+  "keyPoints": [
+    "效率高",
+    "质量好",
+    "安全可靠",
+    "绿色环保"
+  ],
   "documents": []
 }

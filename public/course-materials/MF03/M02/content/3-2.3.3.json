@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-2.3.3",
-  "title": "核心设备设计",
-  "module": "核心技术模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "连接装置",
+  "module": "M02-核心技术模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "节段连接",
+          "content": "焊接连接\n螺栓连接\n套筒连接"
+        },
+        {
+          "title": "承台连接",
+          "content": "预埋件\n灌浆料\n锚固钢筋"
+        },
+        {
+          "title": "临时固定",
+          "content": "支撑架\n限位装置\n调整机构"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M02/images/3-2.3.3_连接装置图.png"
+  ],
+  "keyPoints": [
+    "节段连接牢固",
+    "承台连接可靠",
+    "临时固定稳定"
+  ],
   "documents": []
 }

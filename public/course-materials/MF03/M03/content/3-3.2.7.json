@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-3.2.7",
-  "title": "关键工序操作指南",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "质量检验",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "检验项目",
+          "content": "位置偏差\n垂直度\n标高\n连接质量"
+        },
+        {
+          "title": "检验方法",
+          "content": "全站仪测量\n激光测距\n超声波检测\n外观检查"
+        },
+        {
+          "title": "检验标准",
+          "content": "符合设计要求\n满足规范标准\n质量合格\n记录完整"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M03/images/3-3.2.7_质量检验图.png"
+  ],
+  "keyPoints": [
+    "检验项目全面",
+    "检验方法科学",
+    "检验标准明确"
+  ],
   "documents": []
 }

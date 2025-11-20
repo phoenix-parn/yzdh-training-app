@@ -1,8 +1,38 @@
 {
   "knowledgeId": "3-2.1.1",
-  "title": "工艺原理总述",
-  "module": "核心技术模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "工艺流程总述",
+  "module": "M02-核心技术模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "预制生产",
+          "content": "方桩预制\n质量检验\n养护出厂"
+        },
+        {
+          "title": "运输进场",
+          "content": "运输车辆\n吊装卸货\n现场存放"
+        },
+        {
+          "title": "吊装安装",
+          "content": "吊点连接\n整体起吊\n精确就位"
+        },
+        {
+          "title": "连接固定",
+          "content": "节段连接\n承台固定\n质量检验"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M02/images/3-2.1.1_工艺流程图.png"
+  ],
+  "keyPoints": [
+    "预制生产标准化",
+    "运输安全可靠",
+    "吊装精确高效",
+    "连接牢固可靠"
+  ],
   "documents": []
 }

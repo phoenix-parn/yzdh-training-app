@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-3.3.1",
   "title": "通用操作要求",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "安全要求",
+          "content": "持证上岗\n安全交底\n防护措施\n应急预案"
+        },
+        {
+          "title": "质量要求",
+          "content": "按图施工\n工序检验\n隐蔽验收\n资料齐全"
+        },
+        {
+          "title": "环保要求",
+          "content": "扬尘控制\n噪音控制\n废料处理\n文明施工"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M03/images/3-3.3.1_通用操作要求图.png"
+  ],
+  "keyPoints": [
+    "安全第一",
+    "质量至上",
+    "环保优先"
+  ],
   "documents": []
 }

@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-3.2.5",
-  "title": "关键工序操作指南",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "临时固定",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "固定装置",
+          "content": "支撑架\n限位装置\n调整机构\n监测系统"
+        },
+        {
+          "title": "固定要求",
+          "content": "稳定可靠\n便于调整\n不影响施工\n易于拆除"
+        },
+        {
+          "title": "监测内容",
+          "content": "位移监测\n沉降监测\n倾斜监测\n应力监测"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M03/images/3-3.2.5_临时固定图.png"
+  ],
+  "keyPoints": [
+    "固定装置可靠",
+    "监测系统完善",
+    "调整方便快捷"
+  ],
   "documents": []
 }

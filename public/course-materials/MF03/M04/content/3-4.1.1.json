@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-4.1.1",
-  "title": "质量控制体系",
-  "module": "保障体系模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "质量规范",
+  "module": "M04-保障体系模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "质量标准",
+          "content": "国家标准\n行业规范\n地方标准\n企业标准"
+        },
+        {
+          "title": "验收参数",
+          "content": "位置偏差≤10mm\n垂直度≤5mm\n标高偏差≤10mm\n连接强度≥设计值"
+        },
+        {
+          "title": "检验频率",
+          "content": "每根必检\n关键工序旁站\n隐蔽工程验收\n分部分项验收"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M04/images/3-4.1.1_质量规范图.png"
+  ],
+  "keyPoints": [
+    "标准体系完善",
+    "验收参数明确",
+    "检验频率合理"
+  ],
   "documents": []
 }

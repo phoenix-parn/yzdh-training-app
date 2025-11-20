@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-1.1.2",
-  "title": "工法背景与价值",
-  "module": "基础认知模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "专利技术",
+  "module": "M01-基础认知模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "吊点设置技术",
+          "content": "多点吊装\n受力均衡\n安全系数"
+        },
+        {
+          "title": "整体式连接",
+          "content": "节段连接\n快速锁定\n强度保证"
+        },
+        {
+          "title": "精确定位系统",
+          "content": "激光定位\nGPS辅助\n实时监测"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M01/images/3-1.1.2_专利技术图.png"
+  ],
+  "keyPoints": [
+    "吊点设置科学",
+    "连接技术可靠",
+    "定位系统精确"
+  ],
   "documents": []
 }

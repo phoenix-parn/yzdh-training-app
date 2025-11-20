@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-3.2.6",
-  "title": "关键工序操作指南",
-  "module": "实操流程模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "精度调整",
+  "module": "M03-实操流程模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "调整方法",
+          "content": "千斤顶顶升\n螺栓微调\n垫片调整\n液压调整"
+        },
+        {
+          "title": "调整步骤",
+          "content": "粗调整\n精调整\n测量复核\n固定锁定"
+        },
+        {
+          "title": "精度要求",
+          "content": "平面位置±5mm\n垂直度±3mm\n标高±5mm"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M03/images/3-3.2.6_精度调整图.png"
+  ],
+  "keyPoints": [
+    "调整方法多样",
+    "调整步骤规范",
+    "精度要求严格"
+  ],
   "documents": []
 }

@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-2.3.1",
-  "title": "核心设备设计",
-  "module": "核心技术模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "吊装设备",
+  "module": "M02-核心技术模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "主吊车",
+          "content": "吨位: 100-200吨\n臂长: 40-60m\n作业半径: 30-50m"
+        },
+        {
+          "title": "辅助吊车",
+          "content": "吨位: 50-100吨\n配合主吊车\n稳定方桩"
+        },
+        {
+          "title": "吊具系统",
+          "content": "专用吊梁\n钢丝绳\n卸扣连接"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M02/images/3-2.3.1_吊装设备图.png"
+  ],
+  "keyPoints": [
+    "主吊车吨位足够",
+    "辅助吊车配合",
+    "吊具系统完善"
+  ],
   "documents": []
 }

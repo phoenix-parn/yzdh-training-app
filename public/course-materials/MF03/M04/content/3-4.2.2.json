@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-4.2.2",
-  "title": "安全保障措施",
-  "module": "保障体系模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "用电安全",
+  "module": "M04-保障体系模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "用电管理",
+          "content": "专人负责\n定期检查\n维护保养\n应急处理"
+        },
+        {
+          "title": "线路架设",
+          "content": "架空敷设\n绝缘良好\n接地可靠\n标识清晰"
+        },
+        {
+          "title": "配电箱布局",
+          "content": "位置合理\n防护到位\n标识清楚\n操作方便"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M04/images/3-4.2.2_用电安全图.png"
+  ],
+  "keyPoints": [
+    "用电管理规范",
+    "线路架设安全",
+    "配电箱布局合理"
+  ],
   "documents": []
 }

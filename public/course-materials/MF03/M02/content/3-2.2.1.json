@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-2.2.1",
   "title": "吊点设置技术",
-  "module": "核心技术模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "module": "M02-核心技术模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "吊点位置",
+          "content": "根据受力分析确定\n保证受力均衡\n避免应力集中"
+        },
+        {
+          "title": "吊点数量",
+          "content": "根据方桩长度确定\n一般2-4个吊点\n确保稳定性"
+        },
+        {
+          "title": "吊点构造",
+          "content": "预埋吊环\n钢板加固\n强度验算"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M02/images/3-2.2.1_吊点设置图.png"
+  ],
+  "keyPoints": [
+    "吊点位置科学",
+    "数量合理",
+    "构造可靠"
+  ],
   "documents": []
 }

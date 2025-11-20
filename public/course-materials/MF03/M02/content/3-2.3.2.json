@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-2.3.2",
-  "title": "核心设备设计",
-  "module": "核心技术模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "定位系统",
+  "module": "M02-核心技术模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "激光定位",
+          "content": "激光测距仪\n实时监测\n精度±5mm"
+        },
+        {
+          "title": "GPS辅助",
+          "content": "GPS定位系统\n坐标确定\n轨迹记录"
+        },
+        {
+          "title": "全站仪测量",
+          "content": "全站仪复核\n三维坐标\n精度验证"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M02/images/3-2.3.2_定位系统图.png"
+  ],
+  "keyPoints": [
+    "激光定位精确",
+    "GPS辅助定位",
+    "全站仪复核"
+  ],
   "documents": []
 }

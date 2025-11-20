@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-4.2.1",
-  "title": "安全保障措施",
-  "module": "保障体系模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "吊装作业安全",
+  "module": "M04-保障体系模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "人员安全",
+          "content": "持证上岗\n安全培训\n劳保用品\n安全交底"
+        },
+        {
+          "title": "设备安全",
+          "content": "定期检查\n维护保养\n安全装置\n操作规程"
+        },
+        {
+          "title": "现场安全",
+          "content": "警戒范围\n专人指挥\n通讯畅通\n应急预案"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M04/images/3-4.2.1_吊装作业安全图.png"
+  ],
+  "keyPoints": [
+    "人员安全第一",
+    "设备安全可靠",
+    "现场安全有序"
+  ],
   "documents": []
 }

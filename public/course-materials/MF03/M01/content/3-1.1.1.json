@@ -1,8 +1,37 @@
 {
   "knowledgeId": "3-1.1.1",
-  "title": "工法背景与价值",
-  "module": "基础认知模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "工法概述与创新点",
+  "module": "M01-基础认知模块",
+  "sections": [
+    {
+      "type": "text",
+      "content": "地铁车站超长预制方桩整体式安装施工工法是一种创新的预制装配式施工技术。"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "预制化生产",
+          "content": "工厂化预制\n质量可控\n缩短周期"
+        },
+        {
+          "title": "整体式安装",
+          "content": "多节整体吊装\n提高效率\n减少接头"
+        },
+        {
+          "title": "专用设备",
+          "content": "大型吊车\n精确定位\n安全可靠"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M01/images/3-1.1.1_工法概述图.png"
+  ],
+  "keyPoints": [
+    "预制化生产",
+    "整体式安装",
+    "专用设备"
+  ],
   "documents": []
 }

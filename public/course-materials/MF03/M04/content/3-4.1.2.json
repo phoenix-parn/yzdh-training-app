@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-4.1.2",
-  "title": "质量控制体系",
-  "module": "保障体系模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "质量保证措施",
+  "module": "M04-保障体系模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "组织保证",
+          "content": "质量管理体系\n责任制度\n奖惩机制\n培训教育"
+        },
+        {
+          "title": "技术保证",
+          "content": "技术交底\n样板引路\n过程控制\n精度检测"
+        },
+        {
+          "title": "制度保证",
+          "content": "三检制度\n旁站监理\n隐蔽验收\n资料管理"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M04/images/3-4.1.2_质量保证措施图.png"
+  ],
+  "keyPoints": [
+    "组织保证有力",
+    "技术保证到位",
+    "制度保证完善"
+  ],
   "documents": []
 }

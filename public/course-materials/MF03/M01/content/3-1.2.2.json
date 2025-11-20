@@ -1,8 +1,33 @@
 {
   "knowledgeId": "3-1.2.2",
-  "title": "工法特点与适用范围",
-  "module": "基础认知模块",
-  "content": "待补充:\n1. 从原始提取内容中找到对应页面\n2. 提取相关文字内容\n3. 标注对应的图片素材",
-  "images": [],
+  "title": "适用范围",
+  "module": "M01-基础认知模块",
+  "sections": [
+    {
+      "type": "list",
+      "items": [
+        {
+          "title": "适用工程",
+          "content": "地铁车站\n地下结构\n深基坑工程"
+        },
+        {
+          "title": "方桩规格",
+          "content": "长度: 20-40m\n截面: 400×400-600×600mm\n混凝土强度: C40-C50"
+        },
+        {
+          "title": "地质条件",
+          "content": "软土地层\n粘性土\n砂土层"
+        }
+      ]
+    }
+  ],
+  "images": [
+    "/course-materials/MF03/M01/images/3-1.2.2_适用范围图.png"
+  ],
+  "keyPoints": [
+    "适用地铁车站",
+    "方桩规格明确",
+    "地质条件适宜"
+  ],
   "documents": []
 }
