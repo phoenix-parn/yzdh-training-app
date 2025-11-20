@@ -55,21 +55,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div className="flex flex-col min-h-screen bg-[#F5F5F5]">
       {/* 顶部导航栏 */}
-      <div className="bg-white px-4 py-3 flex items-center justify-between border-b border-border">
+      <div className="bg-white px-4 py-3 flex items-center border-b border-border">
         <div className="flex items-center gap-2 flex-1 min-w-0">
           <img src={logo} alt="Logo" className="h-8 w-8 flex-shrink-0" />
           <h1 className="text-[#333333] text-[14px] font-medium line-clamp-1">永临一体预制拼装叠合地下车站专业培训</h1>
-        </div>
-        <div className="flex items-center gap-3">
-          <Button variant="ghost" size="icon" className="h-9 w-9">
-            <Bell className="h-5 w-5 text-[#666666]" />
-          </Button>
-          <Avatar className="h-9 w-9">
-            <AvatarImage src="" />
-            <AvatarFallback className="bg-primary text-primary-foreground">
-              张
-            </AvatarFallback>
-          </Avatar>
         </div>
       </div>
 
