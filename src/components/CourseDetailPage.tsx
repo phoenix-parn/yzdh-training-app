@@ -55,8 +55,8 @@ export function CourseDetailPage({ onNavigate, courseId = "MF01" }: CourseDetail
   // 根据课程ID选择对应的图片
   const courseImages: Record<string, string> = {
     "MF01": courseImage1,
-    "MF02": courseImage2,
-    "MF03": courseImage3,
+    "MF02": courseImage3,
+    "MF03": courseImage2,
   };
   const currentCourseImage = courseImages[courseId] || courseImage1;
 
