@@ -44,7 +44,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
       <div className="flex-1 flex flex-col items-center justify-center px-6">
         {/* Logo */}
         <div className="mb-12 flex flex-col items-center">
-          <div style={{ width: '80px', height: '80px' }} className="bg-primary rounded-2xl flex items-center justify-center mb-4 shadow-lg overflow-hidden">
+          <div style={{ width: '80px', height: '80px', marginBottom: '12px' }} className="bg-primary rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
             <img 
               src="/icon.png" 
               alt="Logo" 
@@ -64,7 +64,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
         <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4">
           {/* 用户名输入 */}
           <div>
-            <label className="block text-[14px] text-[#333333] mb-2">
+            <label className="block text-[14px] text-[#333333]" style={{ marginBottom: '12px' }}>
               手机号 / 用户名
             </label>
             <input
@@ -78,7 +78,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
 
           {/* 密码输入 */}
           <div>
-            <label className="block text-[14px] text-[#333333] mb-2">
+            <label className="block text-[14px] text-[#333333]" style={{ marginBottom: '12px' }}>
               密码
             </label>
             <div className="relative">
