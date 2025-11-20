@@ -26,11 +26,11 @@ const GLOBAL_STATS_KEY = 'app_global_statistics';
 const SESSION_INTERVAL = 60000; // Update every 60 seconds
 
 // Default global statistics (mock initial values)
-const CURRENT_VERSION = 2;  // Increment this to force update
+const CURRENT_VERSION = 3;  // Increment this to force update
 const DEFAULT_GLOBAL_STATS: GlobalStatistics = {
   totalUsers: 583,
-  totalDuration: 52470000,  // 14575 hours in seconds (14575 * 3600)
-  averageDuration: 90000,  // ~25 hours per user
+  totalDuration: 16473600,  // 4576 hours in seconds (4576 * 3600)
+  averageDuration: 28260,  // ~7.85 hours per user
   lastUpdated: new Date().toISOString(),
   version: CURRENT_VERSION
 };
