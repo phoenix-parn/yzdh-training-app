@@ -1,62 +1,8 @@
 {
   "knowledgeId": "1-3.2.4",
-  "title": "预制构件吊运",
-  "module": "施工流程及操作要点",
+  "title": "",
+  "module": "",
+  "content": "内容待补充",
   "images": [],
-  "keyPoints": [
-    "平稳起吊",
-    "速度≤5m/min",
-    "专人指挥",
-    "设置警戒区"
-  ],
-  "sections": [
-    {
-      "type": "text",
-      "content": "预制构件由门式起重机吊运缓慢移动至设计位置基坑上方。"
-    },
-    {
-      "type": "list",
-      "title": "吊运要求",
-      "items": [
-        {
-          "title": "起吊速度平稳",
-          "content": "起吊速度平稳"
-        },
-        {
-          "title": "移动速度不超过5m/",
-          "content": "移动速度不超过5m/min"
-        },
-        {
-          "title": "专人指挥",
-          "content": "专人指挥"
-        },
-        {
-          "title": "设置警戒区域",
-          "content": "设置警戒区域"
-        }
-      ]
-    },
-    {
-      "type": "list",
-      "title": "操作要点",
-      "items": [
-        {
-          "title": "缓慢起吊，避免冲击",
-          "content": "缓慢起吊，避免冲击"
-        },
-        {
-          "title": "保持构件平稳",
-          "content": "保持构件平稳"
-        },
-        {
-          "title": "避免碰撞周边设施",
-          "content": "避免碰撞周边设施"
-        },
-        {
-          "title": "准确定位到基坑上方",
-          "content": "准确定位到基坑上方"
-        }
-      ]
-    }
-  ]
+  "documents": []
 }

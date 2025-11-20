@@ -1,61 +1,8 @@
 {
   "knowledgeId": "1-3.2.2",
-  "title": "吊索具安装",
-  "module": "施工流程及操作要点",
+  "title": "",
+  "module": "",
+  "content": "内容待补充",
   "images": [],
-  "keyPoints": [
-    "核对系挂点位置",
-    "检查连接牢固性",
-    "防止受力不均"
-  ],
-  "sections": [
-    {
-      "type": "text",
-      "content": "吊索具安装应仔细核对系挂点位置，防止吊装时受力不均匀。"
-    },
-    {
-      "type": "list",
-      "title": "安装步骤",
-      "items": [
-        {
-          "title": "第1步",
-          "content": "检查吊索具完好性"
-        },
-        {
-          "title": "第2步",
-          "content": "核对系挂点编号"
-        },
-        {
-          "title": "第3步",
-          "content": "按编号正确连接"
-        },
-        {
-          "title": "第4步",
-          "content": "检查连接牢固性"
-        },
-        {
-          "title": "第5步",
-          "content": "进行预紧处理"
-        }
-      ]
-    },
-    {
-      "type": "list",
-      "title": "注意事项",
-      "items": [
-        {
-          "title": "系挂点位置必须准确",
-          "content": "系挂点位置必须准确"
-        },
-        {
-          "title": "连接件必须牢固",
-          "content": "连接件必须牢固"
-        },
-        {
-          "title": "不得有扭曲现象",
-          "content": "不得有扭曲现象"
-        }
-      ]
-    }
-  ]
+  "documents": []
 }
