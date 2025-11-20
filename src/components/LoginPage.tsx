@@ -48,13 +48,13 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
             <img 
               src="/icon.png" 
               alt="Logo" 
-              className="w-full h-full object-cover"
+              className="w-20 h-20 object-cover"
             />
           </div>
-          <h1 className="text-center text-[#333333] mb-1">
+          <h1 className="text-center text-[18px] text-[#333333] mb-1 font-['SF_Pro_Display']">
             轨道交通施工培训
           </h1>
-          <p className="text-center text-[14px] text-[#666666]">
+          <p className="text-center text-[14px] text-[#666666] font-['SF_Pro_Display']">
             预制装配式施工技术学习平台
           </p>
         </div>
