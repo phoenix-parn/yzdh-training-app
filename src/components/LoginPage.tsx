@@ -43,8 +43,8 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
       {/* Logo 区域 */}
       <div className="flex-1 flex flex-col items-center justify-center px-6">
         {/* Logo */}
-        <div className="mb-12">
-          <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg overflow-hidden">
+        <div className="mb-12 flex flex-col items-center">
+          <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mb-4 shadow-lg overflow-hidden">
             <img 
               src="/icon.png" 
               alt="Logo" 
