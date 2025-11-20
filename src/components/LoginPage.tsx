@@ -39,11 +39,11 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#F5F8FF] to-white flex flex-col">
+    <div style={{ minHeight: '100vh', backgroundColor: 'rgb(248, 250, 255)', display: 'flex', flexDirection: 'column' }}>
       {/* Logo 区域 */}
-      <div className="flex-1 flex flex-col items-center justify-center px-6">
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 24px' }}>
         {/* Logo */}
-        <div className="mb-12 flex flex-col items-center">
+        <div style={{ marginBottom: '48px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ width: '80px', height: '80px', marginBottom: '12px' }} className="bg-primary rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
             <img 
               src="/icon.png" 
@@ -52,19 +52,19 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
               className="object-contain"
             />
           </div>
-          <h1 className="text-center text-[18px] text-[#333333] mb-1 font-['SF_Pro_Display']">
+          <h1 style={{ textAlign: 'center', fontSize: '18px', color: '#333333', marginBottom: '12px', fontFamily: 'SF_Pro_Display' }}>
             轨道交通施工培训
           </h1>
-          <p className="text-center text-[14px] text-[#666666] font-['SF_Pro_Display']">
+          <p style={{ textAlign: 'center', fontSize: '14px', color: '#666666', fontFamily: 'SF_Pro_Display' }}>
             预制装配式施工技术学习平台
           </p>
         </div>
 
         {/* 登录表单 */}
-        <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4">
+        <form onSubmit={handleSubmit} style={{ width: '100%', maxWidth: '448px' }}>
           {/* 用户名输入 */}
-          <div>
-            <label className="block text-[14px] text-[#333333]" style={{ marginBottom: '12px' }}>
+          <div style={{ marginBottom: '12px' }}>
+            <label style={{ display: 'block', fontSize: '14px', color: '#333333', marginBottom: '12px' }}>
               手机号 / 用户名
             </label>
             <input
@@ -77,8 +77,8 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
           </div>
 
           {/* 密码输入 */}
-          <div>
-            <label className="block text-[14px] text-[#333333]" style={{ marginBottom: '12px' }}>
+          <div style={{ marginBottom: '12px' }}>
+            <label style={{ display: 'block', fontSize: '14px', color: '#333333', marginBottom: '12px' }}>
               密码
             </label>
             <div className="relative">
@@ -105,7 +105,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
 
           {/* 错误提示 */}
           {error && (
-            <div className="rounded-lg bg-red-50 border border-red-200 p-3 flex items-center gap-2">
+            <div style={{ marginBottom: '12px' }} className="rounded-lg bg-red-50 border border-red-200 p-3 flex items-center gap-2">
               <svg className="h-5 w-5 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
               </svg>
@@ -114,7 +114,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
           )}
 
           {/* 记住密码和忘记密码 */}
-          <div className="flex items-center justify-between">
+          <div style={{ marginBottom: '12px' }} className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
@@ -139,7 +139,8 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full h-12 bg-primary hover:bg-primary/90 text-white text-[16px] font-medium rounded-lg mt-6 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
+            style={{ marginBottom: '12px' }}
+            className="w-full h-12 bg-primary hover:bg-primary/90 text-white text-[16px] font-medium rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
           >
             {loading ? (
               <>
@@ -155,7 +156,7 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
           </button>
 
           {/* 快速登录提示 */}
-          <div className="text-center mt-6">
+          <div className="text-center">
             <span className="text-[14px] text-[#666666]">还没有账号？</span>
             <button type="button" className="text-[14px] text-primary hover:text-primary/80 ml-2">
               立即注册
