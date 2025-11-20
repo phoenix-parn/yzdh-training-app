@@ -44,11 +44,12 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
       <div className="flex-1 flex flex-col items-center justify-center px-6">
         {/* Logo */}
         <div className="mb-12 flex flex-col items-center">
-          <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mb-4 shadow-lg overflow-hidden">
+          <div style={{ width: '80px', height: '80px' }} className="bg-primary rounded-2xl flex items-center justify-center mb-4 shadow-lg overflow-hidden">
             <img 
               src="/icon.png" 
               alt="Logo" 
-              className="w-full h-full object-contain"
+              style={{ width: '80px', height: '80px', maxWidth: '80px', maxHeight: '80px' }}
+              className="object-contain"
             />
           </div>
           <h1 className="text-center text-[18px] text-[#333333] mb-1 font-['SF_Pro_Display']">
