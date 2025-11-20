@@ -92,8 +92,16 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                style={{ right: '8px' }}
-                className="absolute top-1/2 -translate-y-1/2 text-[#666666] hover:text-[#333333]"
+                style={{ 
+                  position: 'absolute',
+                  right: '8px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+                className="text-[#666666] hover:text-[#333333]"
               >
                 {showPassword ? (
                   <EyeOff className="h-5 w-5" />
@@ -155,14 +163,6 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
               <span>登录</span>
             )}
           </button>
-
-          {/* 快速登录提示 */}
-          <div className="text-center">
-            <span className="text-[14px] text-[#666666]">还没有账号？</span>
-            <button type="button" className="text-[14px] text-primary hover:text-primary/80 ml-2">
-              立即注册
-            </button>
-          </div>
         </form>
       </div>
 
