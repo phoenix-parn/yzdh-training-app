@@ -44,11 +44,11 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
       <div className="flex-1 flex flex-col items-center justify-center px-6">
         {/* Logo */}
         <div className="mb-12">
-          <div className="w-[80px] h-[80px] bg-primary rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg overflow-hidden">
+          <div className="w-[64px] h-[64px] bg-primary rounded-2xl flex items-center justify-center mb-4 mx-auto shadow-lg overflow-hidden">
             <img 
               src="/icon.png" 
               alt="Logo" 
-              className="w-[80px] h-[80px] object-cover"
+              className="w-[64px] h-[64px] object-cover"
             />
           </div>
           <h1 className="text-center text-[18px] text-[#333333] mb-1 font-['SF_Pro_Display']">
